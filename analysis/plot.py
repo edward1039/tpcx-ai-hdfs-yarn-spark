@@ -39,7 +39,7 @@ def style(ax, title, xlabel, ylabel):
 
 
 def rating_col(df):
-    cols = [c for c in df.columns if c.startswith("rows_") and "rating" in c]
+    cols = [c for c in df.columns if c.startswith("rows_") and "rating" in c.lower()]
     return cols[0] if cols else None
 
 

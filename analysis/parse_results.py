@@ -159,8 +159,14 @@ def main():
     raw = os.path.join(results, "raw")
     records = []
     for exp in sorted(os.listdir(raw)) if os.path.isdir(raw) else []:
-        for run in sorted(os.listdir(os.path.join(raw, exp))):
-            rec = parse_run(exp, os.path.join(raw, exp, run))
+        exp_dir = os.path.join(raw, exp)
+        if not os.path.isdir(exp_dir):
+            continue  # e.g. .gitkeep
+        for run in sorted(os.listdir(exp_dir)):
+            run_dir = os.path.join(exp_dir, run)
+            if not os.path.isdir(run_dir):
+                continue
+            rec = parse_run(exp, run_dir)
             if rec:
                 records.append(rec)
     if not records:
