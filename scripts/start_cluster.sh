@@ -11,6 +11,7 @@ running NodeManager     || yarn --daemon start nodemanager
 sleep 5
 
 # HDFS home directory for the kit's relative paths, and the Spark event-log directory
+hdfs dfsadmin -safemode wait >/dev/null   # NameNode refuses writes until it leaves safe mode
 hdfs dfs -mkdir -p "/user/$USER" /spark-logs
 
 running HistoryServer || "$SPARK_HOME/sbin/start-history-server.sh" >/dev/null
