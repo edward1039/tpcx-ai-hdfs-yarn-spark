@@ -1,0 +1,271 @@
+experiment,run,sf,cores,streams,rep,app_seq,phase_guess,app_name,stage_id,stage_name,tasks,duration_s
+A,sf1_c8_s2_r1,1,8,2,1,1,training UC3,UseCase03,2,collect at UseCase03.scala:115,8,33.954
+A,sf1_c8_s2_r1,1,8,2,1,1,training UC3,UseCase03,1,collect at UseCase03.scala:115,8,21.96
+A,sf1_c8_s2_r1,1,8,2,1,1,training UC3,UseCase03,3,collect at UseCase03.scala:115,200,9.89
+A,sf1_c8_s2_r1,1,8,2,1,2,training UC7,UseCase07$,3,mapPartitions at ALS.scala:1358,200,7.049
+A,sf1_c8_s2_r1,1,8,2,1,2,training UC7,UseCase07$,0,rdd at ALS.scala:697,1,3.414
+A,sf1_c8_s2_r1,1,8,2,1,2,training UC7,UseCase07$,4,map at ALS.scala:1601,200,2.521
+A,sf1_c8_s2_r1,1,8,2,1,3,serving UC3,UseCase03,2,csv at UseCase03.scala:267,8,3.355
+A,sf1_c8_s2_r1,1,8,2,1,3,serving UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.448
+A,sf1_c8_s2_r1,1,8,2,1,3,serving UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.424
+A,sf1_c8_s2_r1,1,8,2,1,4,serving UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.313
+A,sf1_c8_s2_r1,1,8,2,1,4,serving UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.101
+A,sf1_c8_s2_r1,1,8,2,1,4,serving UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.053
+A,sf1_c8_s2_r1,1,8,2,1,5,scoring UC3,UseCase03,2,csv at UseCase03.scala:267,8,3.64
+A,sf1_c8_s2_r1,1,8,2,1,5,scoring UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.957
+A,sf1_c8_s2_r1,1,8,2,1,5,scoring UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.373
+A,sf1_c8_s2_r1,1,8,2,1,6,scoring UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,3.598
+A,sf1_c8_s2_r1,1,8,2,1,6,scoring UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,3.372
+A,sf1_c8_s2_r1,1,8,2,1,6,scoring UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.772
+A,sf1_c8_s2_r1,1,8,2,1,7,throughput,UseCase03,2,csv at UseCase03.scala:267,8,3.842
+A,sf1_c8_s2_r1,1,8,2,1,7,throughput,UseCase03,0,csv at UseCase03.scala:260,1,3.144
+A,sf1_c8_s2_r1,1,8,2,1,7,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.433
+A,sf1_c8_s2_r1,1,8,2,1,8,throughput,UseCase03,2,csv at UseCase03.scala:267,8,4.888
+A,sf1_c8_s2_r1,1,8,2,1,8,throughput,UseCase03,0,csv at UseCase03.scala:260,1,3.501
+A,sf1_c8_s2_r1,1,8,2,1,8,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.524
+A,sf1_c8_s2_r1,1,8,2,1,9,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,3.099
+A,sf1_c8_s2_r1,1,8,2,1,9,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.764
+A,sf1_c8_s2_r1,1,8,2,1,9,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,2.538
+A,sf1_c8_s2_r1,1,8,2,1,10,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,2.896
+A,sf1_c8_s2_r1,1,8,2,1,10,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.687
+A,sf1_c8_s2_r1,1,8,2,1,10,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.392
+A,sf1_c8_s2_r2,1,8,2,2,1,training UC3,UseCase03,2,collect at UseCase03.scala:115,8,42.95
+A,sf1_c8_s2_r2,1,8,2,2,1,training UC3,UseCase03,1,collect at UseCase03.scala:115,8,22.95
+A,sf1_c8_s2_r2,1,8,2,2,1,training UC3,UseCase03,3,collect at UseCase03.scala:115,200,21.477
+A,sf1_c8_s2_r2,1,8,2,2,2,training UC7,UseCase07$,3,mapPartitions at ALS.scala:1358,200,8.81
+A,sf1_c8_s2_r2,1,8,2,2,2,training UC7,UseCase07$,0,rdd at ALS.scala:697,1,5.056
+A,sf1_c8_s2_r2,1,8,2,2,2,training UC7,UseCase07$,4,map at ALS.scala:1601,200,4.798
+A,sf1_c8_s2_r2,1,8,2,2,3,serving UC3,UseCase03,2,csv at UseCase03.scala:267,8,4.821
+A,sf1_c8_s2_r2,1,8,2,2,3,serving UC3,UseCase03,0,csv at UseCase03.scala:260,1,4.26
+A,sf1_c8_s2_r2,1,8,2,2,3,serving UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.496
+A,sf1_c8_s2_r2,1,8,2,2,4,serving UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,3.727
+A,sf1_c8_s2_r2,1,8,2,2,4,serving UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,3.336
+A,sf1_c8_s2_r2,1,8,2,2,4,serving UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.567
+A,sf1_c8_s2_r2,1,8,2,2,5,scoring UC3,UseCase03,2,csv at UseCase03.scala:267,8,5.05
+A,sf1_c8_s2_r2,1,8,2,2,5,scoring UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.502
+A,sf1_c8_s2_r2,1,8,2,2,5,scoring UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.359
+A,sf1_c8_s2_r2,1,8,2,2,6,scoring UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,3.369
+A,sf1_c8_s2_r2,1,8,2,2,6,scoring UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.946
+A,sf1_c8_s2_r2,1,8,2,2,6,scoring UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.882
+A,sf1_c8_s2_r2,1,8,2,2,7,throughput,UseCase03,2,csv at UseCase03.scala:267,8,5.927
+A,sf1_c8_s2_r2,1,8,2,2,7,throughput,UseCase03,0,csv at UseCase03.scala:260,1,3.495
+A,sf1_c8_s2_r2,1,8,2,2,7,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.442
+A,sf1_c8_s2_r2,1,8,2,2,8,throughput,UseCase03,2,csv at UseCase03.scala:267,8,11.75
+A,sf1_c8_s2_r2,1,8,2,2,8,throughput,UseCase03,0,csv at UseCase03.scala:260,1,2.46
+A,sf1_c8_s2_r2,1,8,2,2,8,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.835
+A,sf1_c8_s2_r2,1,8,2,2,9,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,6.664
+A,sf1_c8_s2_r2,1,8,2,2,9,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,3.296
+A,sf1_c8_s2_r2,1,8,2,2,9,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.789
+A,sf1_c8_s2_r2,1,8,2,2,10,throughput,UseCase07$,5,csv at UseCase07.scala:103,1,4.166
+A,sf1_c8_s2_r2,1,8,2,2,10,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,3.999
+A,sf1_c8_s2_r2,1,8,2,2,10,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,3.36
+A,sf1_c8_s2_r3,1,8,2,3,1,training UC3,UseCase03,2,collect at UseCase03.scala:115,8,30.849
+A,sf1_c8_s2_r3,1,8,2,3,1,training UC3,UseCase03,1,collect at UseCase03.scala:115,8,16.27
+A,sf1_c8_s2_r3,1,8,2,3,1,training UC3,UseCase03,3,collect at UseCase03.scala:115,200,14.619
+A,sf1_c8_s2_r3,1,8,2,3,2,training UC7,UseCase07$,3,mapPartitions at ALS.scala:1358,200,5.874
+A,sf1_c8_s2_r3,1,8,2,3,2,training UC7,UseCase07$,0,rdd at ALS.scala:697,1,3.217
+A,sf1_c8_s2_r3,1,8,2,3,2,training UC7,UseCase07$,4,map at ALS.scala:1601,200,2.278
+A,sf1_c8_s2_r3,1,8,2,3,3,serving UC3,UseCase03,2,csv at UseCase03.scala:267,8,5.383
+A,sf1_c8_s2_r3,1,8,2,3,3,serving UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.319
+A,sf1_c8_s2_r3,1,8,2,3,3,serving UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.399
+A,sf1_c8_s2_r3,1,8,2,3,4,serving UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.037
+A,sf1_c8_s2_r3,1,8,2,3,4,serving UC7,UseCase07$,0,first at ReadWrite.scala:587,1,1.718
+A,sf1_c8_s2_r3,1,8,2,3,4,serving UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,1.699
+A,sf1_c8_s2_r3,1,8,2,3,5,scoring UC3,UseCase03,2,csv at UseCase03.scala:267,8,3.272
+A,sf1_c8_s2_r3,1,8,2,3,5,scoring UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.581
+A,sf1_c8_s2_r3,1,8,2,3,5,scoring UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.349
+A,sf1_c8_s2_r3,1,8,2,3,6,scoring UC7,UseCase07$,0,first at ReadWrite.scala:587,1,3.403
+A,sf1_c8_s2_r3,1,8,2,3,6,scoring UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.635
+A,sf1_c8_s2_r3,1,8,2,3,6,scoring UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.43
+A,sf1_c8_s2_r3,1,8,2,3,7,throughput,UseCase03,2,csv at UseCase03.scala:267,8,5.063
+A,sf1_c8_s2_r3,1,8,2,3,7,throughput,UseCase03,0,csv at UseCase03.scala:260,1,2.625
+A,sf1_c8_s2_r3,1,8,2,3,7,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.303
+A,sf1_c8_s2_r3,1,8,2,3,8,throughput,UseCase03,2,csv at UseCase03.scala:267,8,2.687
+A,sf1_c8_s2_r3,1,8,2,3,8,throughput,UseCase03,0,csv at UseCase03.scala:260,1,1.963
+A,sf1_c8_s2_r3,1,8,2,3,8,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.251
+A,sf1_c8_s2_r3,1,8,2,3,9,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,4.748
+A,sf1_c8_s2_r3,1,8,2,3,9,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,4.612
+A,sf1_c8_s2_r3,1,8,2,3,9,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,2.408
+A,sf1_c8_s2_r3,1,8,2,3,10,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.385
+A,sf1_c8_s2_r3,1,8,2,3,10,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.112
+A,sf1_c8_s2_r3,1,8,2,3,10,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,2.065
+A,sf3_c8_s2_r1,3,8,2,1,1,training UC3,UseCase03,2,collect at UseCase03.scala:115,8,65.801
+A,sf3_c8_s2_r1,3,8,2,1,1,training UC3,UseCase03,1,collect at UseCase03.scala:115,8,22.718
+A,sf3_c8_s2_r1,3,8,2,1,1,training UC3,UseCase03,10,json at UseCase03.scala:254,200,11.615
+A,sf3_c8_s2_r1,3,8,2,1,2,training UC7,UseCase07$,3,mapPartitions at ALS.scala:1358,200,6.421
+A,sf3_c8_s2_r1,3,8,2,1,2,training UC7,UseCase07$,0,rdd at ALS.scala:697,1,3.107
+A,sf3_c8_s2_r1,3,8,2,1,2,training UC7,UseCase07$,4,map at ALS.scala:1601,200,2.94
+A,sf3_c8_s2_r1,3,8,2,1,3,serving UC3,UseCase03,2,csv at UseCase03.scala:267,8,5.624
+A,sf3_c8_s2_r1,3,8,2,1,3,serving UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.656
+A,sf3_c8_s2_r1,3,8,2,1,3,serving UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.393
+A,sf3_c8_s2_r1,3,8,2,1,4,serving UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,3.095
+A,sf3_c8_s2_r1,3,8,2,1,4,serving UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.683
+A,sf3_c8_s2_r1,3,8,2,1,4,serving UC7,UseCase07$,0,first at ReadWrite.scala:587,1,1.804
+A,sf3_c8_s2_r1,3,8,2,1,5,scoring UC3,UseCase03,2,csv at UseCase03.scala:267,8,3.693
+A,sf3_c8_s2_r1,3,8,2,1,5,scoring UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.736
+A,sf3_c8_s2_r1,3,8,2,1,5,scoring UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.292
+A,sf3_c8_s2_r1,3,8,2,1,6,scoring UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.444
+A,sf3_c8_s2_r1,3,8,2,1,6,scoring UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.43
+A,sf3_c8_s2_r1,3,8,2,1,6,scoring UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.221
+A,sf3_c8_s2_r1,3,8,2,1,7,throughput,UseCase03,2,csv at UseCase03.scala:267,8,3.264
+A,sf3_c8_s2_r1,3,8,2,1,7,throughput,UseCase03,0,csv at UseCase03.scala:260,1,2.257
+A,sf3_c8_s2_r1,3,8,2,1,7,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.393
+A,sf3_c8_s2_r1,3,8,2,1,8,throughput,UseCase03,2,csv at UseCase03.scala:267,8,3.449
+A,sf3_c8_s2_r1,3,8,2,1,8,throughput,UseCase03,0,csv at UseCase03.scala:260,1,3.156
+A,sf3_c8_s2_r1,3,8,2,1,8,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.41
+A,sf3_c8_s2_r1,3,8,2,1,9,throughput,UseCase07$,5,csv at UseCase07.scala:103,1,2.518
+A,sf3_c8_s2_r1,3,8,2,1,9,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,2.462
+A,sf3_c8_s2_r1,3,8,2,1,9,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.217
+A,sf3_c8_s2_r1,3,8,2,1,10,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,2.292
+A,sf3_c8_s2_r1,3,8,2,1,10,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.195
+A,sf3_c8_s2_r1,3,8,2,1,10,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,1.993
+A,sf3_c8_s2_r2,3,8,2,2,1,training UC3,UseCase03,2,collect at UseCase03.scala:115,8,70.195
+A,sf3_c8_s2_r2,3,8,2,2,1,training UC3,UseCase03,1,collect at UseCase03.scala:115,8,27.415
+A,sf3_c8_s2_r2,3,8,2,2,1,training UC3,UseCase03,3,collect at UseCase03.scala:115,200,15.951
+A,sf3_c8_s2_r2,3,8,2,2,2,training UC7,UseCase07$,3,mapPartitions at ALS.scala:1358,200,7.148
+A,sf3_c8_s2_r2,3,8,2,2,2,training UC7,UseCase07$,0,rdd at ALS.scala:697,1,4.027
+A,sf3_c8_s2_r2,3,8,2,2,2,training UC7,UseCase07$,4,map at ALS.scala:1601,200,3.004
+A,sf3_c8_s2_r2,3,8,2,2,3,serving UC3,UseCase03,2,csv at UseCase03.scala:267,8,4.811
+A,sf3_c8_s2_r2,3,8,2,2,3,serving UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.475
+A,sf3_c8_s2_r2,3,8,2,2,3,serving UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.432
+A,sf3_c8_s2_r2,3,8,2,2,4,serving UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.192
+A,sf3_c8_s2_r2,3,8,2,2,4,serving UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.137
+A,sf3_c8_s2_r2,3,8,2,2,4,serving UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,1.954
+A,sf3_c8_s2_r2,3,8,2,2,5,scoring UC3,UseCase03,2,csv at UseCase03.scala:267,8,3.82
+A,sf3_c8_s2_r2,3,8,2,2,5,scoring UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.697
+A,sf3_c8_s2_r2,3,8,2,2,5,scoring UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.366
+A,sf3_c8_s2_r2,3,8,2,2,6,scoring UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.56
+A,sf3_c8_s2_r2,3,8,2,2,6,scoring UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.312
+A,sf3_c8_s2_r2,3,8,2,2,6,scoring UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.182
+A,sf3_c8_s2_r2,3,8,2,2,7,throughput,UseCase03,2,csv at UseCase03.scala:267,8,3.777
+A,sf3_c8_s2_r2,3,8,2,2,7,throughput,UseCase03,0,csv at UseCase03.scala:260,1,2.871
+A,sf3_c8_s2_r2,3,8,2,2,7,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.304
+A,sf3_c8_s2_r2,3,8,2,2,8,throughput,UseCase03,2,csv at UseCase03.scala:267,8,5.879
+A,sf3_c8_s2_r2,3,8,2,2,8,throughput,UseCase03,0,csv at UseCase03.scala:260,1,2.657
+A,sf3_c8_s2_r2,3,8,2,2,8,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.368
+A,sf3_c8_s2_r2,3,8,2,2,9,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,2.602
+A,sf3_c8_s2_r2,3,8,2,2,9,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.586
+A,sf3_c8_s2_r2,3,8,2,2,9,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.286
+A,sf3_c8_s2_r2,3,8,2,2,10,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,1.524
+A,sf3_c8_s2_r2,3,8,2,2,10,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,1.496
+A,sf3_c8_s2_r2,3,8,2,2,10,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,1.387
+A,sf3_c8_s2_r3,3,8,2,3,1,training UC3,UseCase03,2,collect at UseCase03.scala:115,8,52.967
+A,sf3_c8_s2_r3,3,8,2,3,1,training UC3,UseCase03,3,collect at UseCase03.scala:115,200,23.516
+A,sf3_c8_s2_r3,3,8,2,3,1,training UC3,UseCase03,1,collect at UseCase03.scala:115,8,20.407
+A,sf3_c8_s2_r3,3,8,2,3,2,training UC7,UseCase07$,3,mapPartitions at ALS.scala:1358,200,6.702
+A,sf3_c8_s2_r3,3,8,2,3,2,training UC7,UseCase07$,0,rdd at ALS.scala:697,1,3.774
+A,sf3_c8_s2_r3,3,8,2,3,2,training UC7,UseCase07$,4,map at ALS.scala:1601,200,2.782
+A,sf3_c8_s2_r3,3,8,2,3,3,serving UC3,UseCase03,2,csv at UseCase03.scala:267,8,4.118
+A,sf3_c8_s2_r3,3,8,2,3,3,serving UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.65
+A,sf3_c8_s2_r3,3,8,2,3,3,serving UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.419
+A,sf3_c8_s2_r3,3,8,2,3,4,serving UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.357
+A,sf3_c8_s2_r3,3,8,2,3,4,serving UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.185
+A,sf3_c8_s2_r3,3,8,2,3,4,serving UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.15
+A,sf3_c8_s2_r3,3,8,2,3,5,scoring UC3,UseCase03,2,csv at UseCase03.scala:267,8,8.466
+A,sf3_c8_s2_r3,3,8,2,3,5,scoring UC3,UseCase03,0,csv at UseCase03.scala:260,1,3.655
+A,sf3_c8_s2_r3,3,8,2,3,5,scoring UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.418
+A,sf3_c8_s2_r3,3,8,2,3,6,scoring UC7,UseCase07$,5,csv at UseCase07.scala:103,1,2.644
+A,sf3_c8_s2_r3,3,8,2,3,6,scoring UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.542
+A,sf3_c8_s2_r3,3,8,2,3,6,scoring UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.477
+A,sf3_c8_s2_r3,3,8,2,3,7,throughput,UseCase03,2,csv at UseCase03.scala:267,8,6.987
+A,sf3_c8_s2_r3,3,8,2,3,7,throughput,UseCase03,0,csv at UseCase03.scala:260,1,3.538
+A,sf3_c8_s2_r3,3,8,2,3,7,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.468
+A,sf3_c8_s2_r3,3,8,2,3,8,throughput,UseCase03,2,csv at UseCase03.scala:267,8,7.76
+A,sf3_c8_s2_r3,3,8,2,3,8,throughput,UseCase03,0,csv at UseCase03.scala:260,1,3.341
+A,sf3_c8_s2_r3,3,8,2,3,8,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.379
+A,sf3_c8_s2_r3,3,8,2,3,9,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,3.546
+A,sf3_c8_s2_r3,3,8,2,3,9,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.389
+A,sf3_c8_s2_r3,3,8,2,3,9,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.125
+A,sf3_c8_s2_r3,3,8,2,3,10,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.45
+A,sf3_c8_s2_r3,3,8,2,3,10,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.156
+A,sf3_c8_s2_r3,3,8,2,3,10,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,2.114
+A,sf5_c8_s2_r1,5,8,2,1,1,training UC3,UseCase03,2,collect at UseCase03.scala:115,11,96.841
+A,sf5_c8_s2_r1,5,8,2,1,1,training UC3,UseCase03,1,collect at UseCase03.scala:115,8,38.051
+A,sf5_c8_s2_r1,5,8,2,1,1,training UC3,UseCase03,3,collect at UseCase03.scala:115,200,29.218
+A,sf5_c8_s2_r1,5,8,2,1,2,training UC7,UseCase07$,3,mapPartitions at ALS.scala:1358,200,6.991
+A,sf5_c8_s2_r1,5,8,2,1,2,training UC7,UseCase07$,0,rdd at ALS.scala:697,2,4.624
+A,sf5_c8_s2_r1,5,8,2,1,2,training UC7,UseCase07$,4,map at ALS.scala:1601,200,2.632
+A,sf5_c8_s2_r1,5,8,2,1,3,serving UC3,UseCase03,2,csv at UseCase03.scala:267,8,4.471
+A,sf5_c8_s2_r1,5,8,2,1,3,serving UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.786
+A,sf5_c8_s2_r1,5,8,2,1,3,serving UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.356
+A,sf5_c8_s2_r1,5,8,2,1,4,serving UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.317
+A,sf5_c8_s2_r1,5,8,2,1,4,serving UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.181
+A,sf5_c8_s2_r1,5,8,2,1,4,serving UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.071
+A,sf5_c8_s2_r1,5,8,2,1,5,scoring UC3,UseCase03,2,csv at UseCase03.scala:267,8,5.681
+A,sf5_c8_s2_r1,5,8,2,1,5,scoring UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.845
+A,sf5_c8_s2_r1,5,8,2,1,5,scoring UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.352
+A,sf5_c8_s2_r1,5,8,2,1,6,scoring UC7,UseCase07$,5,csv at UseCase07.scala:103,1,2.887
+A,sf5_c8_s2_r1,5,8,2,1,6,scoring UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.399
+A,sf5_c8_s2_r1,5,8,2,1,6,scoring UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.168
+A,sf5_c8_s2_r1,5,8,2,1,7,throughput,UseCase03,2,csv at UseCase03.scala:267,8,3.734
+A,sf5_c8_s2_r1,5,8,2,1,7,throughput,UseCase03,0,csv at UseCase03.scala:260,1,2.804
+A,sf5_c8_s2_r1,5,8,2,1,7,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.397
+A,sf5_c8_s2_r1,5,8,2,1,8,throughput,UseCase03,2,csv at UseCase03.scala:267,8,4.039
+A,sf5_c8_s2_r1,5,8,2,1,8,throughput,UseCase03,0,csv at UseCase03.scala:260,1,2.425
+A,sf5_c8_s2_r1,5,8,2,1,8,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.383
+A,sf5_c8_s2_r1,5,8,2,1,9,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.402
+A,sf5_c8_s2_r1,5,8,2,1,9,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,2.401
+A,sf5_c8_s2_r1,5,8,2,1,9,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.117
+A,sf5_c8_s2_r1,5,8,2,1,10,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,2.295
+A,sf5_c8_s2_r1,5,8,2,1,10,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.141
+A,sf5_c8_s2_r1,5,8,2,1,10,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,1.925
+A,sf5_c8_s2_r2,5,8,2,2,1,training UC3,UseCase03,2,collect at UseCase03.scala:115,8,96.467
+A,sf5_c8_s2_r2,5,8,2,2,1,training UC3,UseCase03,1,collect at UseCase03.scala:115,11,59.839
+A,sf5_c8_s2_r2,5,8,2,2,1,training UC3,UseCase03,3,collect at UseCase03.scala:115,200,19.986
+A,sf5_c8_s2_r2,5,8,2,2,2,training UC7,UseCase07$,3,mapPartitions at ALS.scala:1358,200,5.414
+A,sf5_c8_s2_r2,5,8,2,2,2,training UC7,UseCase07$,0,rdd at ALS.scala:697,2,3.014
+A,sf5_c8_s2_r2,5,8,2,2,2,training UC7,UseCase07$,4,map at ALS.scala:1601,200,1.917
+A,sf5_c8_s2_r2,5,8,2,2,3,serving UC3,UseCase03,2,csv at UseCase03.scala:267,8,5.298
+A,sf5_c8_s2_r2,5,8,2,2,3,serving UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.207
+A,sf5_c8_s2_r2,5,8,2,2,3,serving UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.333
+A,sf5_c8_s2_r2,5,8,2,2,4,serving UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,1.798
+A,sf5_c8_s2_r2,5,8,2,2,4,serving UC7,UseCase07$,0,first at ReadWrite.scala:587,1,1.591
+A,sf5_c8_s2_r2,5,8,2,2,4,serving UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,1.512
+A,sf5_c8_s2_r2,5,8,2,2,5,scoring UC3,UseCase03,2,csv at UseCase03.scala:267,8,3.121
+A,sf5_c8_s2_r2,5,8,2,2,5,scoring UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.378
+A,sf5_c8_s2_r2,5,8,2,2,5,scoring UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.271
+A,sf5_c8_s2_r2,5,8,2,2,6,scoring UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.814
+A,sf5_c8_s2_r2,5,8,2,2,6,scoring UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.599
+A,sf5_c8_s2_r2,5,8,2,2,6,scoring UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.338
+A,sf5_c8_s2_r2,5,8,2,2,7,throughput,UseCase03,0,csv at UseCase03.scala:260,1,3.859
+A,sf5_c8_s2_r2,5,8,2,2,7,throughput,UseCase03,2,csv at UseCase03.scala:267,8,3.463
+A,sf5_c8_s2_r2,5,8,2,2,7,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.246
+A,sf5_c8_s2_r2,5,8,2,2,8,throughput,UseCase03,2,csv at UseCase03.scala:267,8,5.383
+A,sf5_c8_s2_r2,5,8,2,2,8,throughput,UseCase03,0,csv at UseCase03.scala:260,1,3.184
+A,sf5_c8_s2_r2,5,8,2,2,8,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.387
+A,sf5_c8_s2_r2,5,8,2,2,9,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,3.823
+A,sf5_c8_s2_r2,5,8,2,2,9,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,3.3
+A,sf5_c8_s2_r2,5,8,2,2,9,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,3.23
+A,sf5_c8_s2_r2,5,8,2,2,10,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.438
+A,sf5_c8_s2_r2,5,8,2,2,10,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,2.256
+A,sf5_c8_s2_r2,5,8,2,2,10,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.156
+A,sf5_c8_s2_r3,5,8,2,3,1,training UC3,UseCase03,2,collect at UseCase03.scala:115,11,99.578
+A,sf5_c8_s2_r3,5,8,2,3,1,training UC3,UseCase03,1,collect at UseCase03.scala:115,8,39.449
+A,sf5_c8_s2_r3,5,8,2,3,1,training UC3,UseCase03,3,collect at UseCase03.scala:115,200,25.66
+A,sf5_c8_s2_r3,5,8,2,3,2,training UC7,UseCase07$,3,mapPartitions at ALS.scala:1358,200,7.124
+A,sf5_c8_s2_r3,5,8,2,3,2,training UC7,UseCase07$,0,rdd at ALS.scala:697,2,5.814
+A,sf5_c8_s2_r3,5,8,2,3,2,training UC7,UseCase07$,4,map at ALS.scala:1601,200,3.038
+A,sf5_c8_s2_r3,5,8,2,3,3,serving UC3,UseCase03,2,csv at UseCase03.scala:267,8,3.339
+A,sf5_c8_s2_r3,5,8,2,3,3,serving UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.591
+A,sf5_c8_s2_r3,5,8,2,3,3,serving UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.361
+A,sf5_c8_s2_r3,5,8,2,3,4,serving UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.412
+A,sf5_c8_s2_r3,5,8,2,3,4,serving UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.29
+A,sf5_c8_s2_r3,5,8,2,3,4,serving UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.09
+A,sf5_c8_s2_r3,5,8,2,3,5,scoring UC3,UseCase03,2,csv at UseCase03.scala:267,8,6.753
+A,sf5_c8_s2_r3,5,8,2,3,5,scoring UC3,UseCase03,0,csv at UseCase03.scala:260,1,2.966
+A,sf5_c8_s2_r3,5,8,2,3,5,scoring UC3,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.423
+A,sf5_c8_s2_r3,5,8,2,3,6,scoring UC7,UseCase07$,0,first at ReadWrite.scala:587,1,2.276
+A,sf5_c8_s2_r3,5,8,2,3,6,scoring UC7,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.165
+A,sf5_c8_s2_r3,5,8,2,3,6,scoring UC7,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,1.994
+A,sf5_c8_s2_r3,5,8,2,3,7,throughput,UseCase03,2,csv at UseCase03.scala:267,8,5.316
+A,sf5_c8_s2_r3,5,8,2,3,7,throughput,UseCase03,0,csv at UseCase03.scala:260,1,2.689
+A,sf5_c8_s2_r3,5,8,2,3,7,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.39
+A,sf5_c8_s2_r3,5,8,2,3,8,throughput,UseCase03,2,csv at UseCase03.scala:267,8,4.379
+A,sf5_c8_s2_r3,5,8,2,3,8,throughput,UseCase03,0,csv at UseCase03.scala:260,1,3.072
+A,sf5_c8_s2_r3,5,8,2,3,8,throughput,UseCase03,1,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,1,0.434
+A,sf5_c8_s2_r3,5,8,2,3,9,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,3.988
+A,sf5_c8_s2_r3,5,8,2,3,9,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.22
+A,sf5_c8_s2_r3,5,8,2,3,9,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.016
+A,sf5_c8_s2_r3,5,8,2,3,10,throughput,UseCase07$,0,first at ReadWrite.scala:587,1,3.471
+A,sf5_c8_s2_r3,5,8,2,3,10,throughput,UseCase07$,4,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,2.131
+A,sf5_c8_s2_r3,5,8,2,3,10,throughput,UseCase07$,3,$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266,7,1.86

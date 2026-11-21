@@ -1,0 +1,3 @@
+use_case,phase,rows_column,fixed_cost_s,s_per_million_rows,r2,runs
+UC3,training,rows_lineitem,74.71,1.418,0.7247,9
+UC7,training,rows_ProductRating,60.98,-10.545,0.0217,9

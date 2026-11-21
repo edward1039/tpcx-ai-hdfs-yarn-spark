@@ -1,0 +1,6 @@
+   120695 output/raw_data/training/ProductRating.csv
+ 23026667 output/raw_data/training/lineitem.csv
+  3676956 output/raw_data/training/order.csv
+      708 output/raw_data/training/product.csv
+      749 output/raw_data/training/store_dept.csv
+ 26825775 total
