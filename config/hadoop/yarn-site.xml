@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+  YARN sizing for a 10 GB WSL2 host:
+    NodeManager pool 5,120 MB / 10 vcores (2 of 12 cores and ~3 GB left to Linux, HDFS and YARN daemons)
+    one application = executor 3,584 MB + ApplicationMaster 1,024 MB = 4,608 MB
+-->
+<configuration>
+  <property>
+    <name>yarn.resourcemanager.hostname</name>
+    <value>localhost</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+    <value>5120</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.resource.cpu-vcores</name>
+    <value>10</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.minimum-allocation-mb</name>
+    <value>512</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.maximum-allocation-mb</name>
+    <value>5120</value>
+  </property>
+  <!-- default is 4, which rejects an 8-core executor -->
+  <property>
+    <name>yarn.scheduler.maximum-allocation-vcores</name>
+    <value>10</value>
+  </property>
+  <!-- Java 8 reserves large virtual memory; without this YARN kills healthy containers -->
+  <property>
+    <name>yarn.nodemanager.vmem-check-enabled</name>
+    <value>false</value>
+  </property>
+</configuration>

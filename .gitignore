@@ -1,0 +1,11 @@
+# TPCx-AI kit and generated data are not part of this repository (TPC EULA, size)
+tpcx-ai-v2.0.0/
+output/
+*.zip
+
+# Raw Spark event logs are large; summaries are kept in results/
+results/raw/**/eventlogs/
+
+__pycache__/
+*.pyc
+.DS_Store

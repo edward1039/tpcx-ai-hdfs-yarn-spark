@@ -1,0 +1,4 @@
+# Copy to C:\Users\<you>\.wslconfig, then run `wsl --shutdown` in PowerShell.
+[wsl2]
+memory=10GB
+swap=8GB

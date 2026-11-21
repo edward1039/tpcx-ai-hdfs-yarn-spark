@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- __HOME__ is replaced with the user's home directory by scripts/install_configs.sh -->
+<configuration>
+  <!-- One DataNode, so a replication factor above 1 is not possible -->
+  <property>
+    <name>dfs.replication</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>file://__HOME__/hadoop-data/namenode</value>
+  </property>
+  <property>
+    <name>dfs.datanode.data.dir</name>
+    <value>file://__HOME__/hadoop-data/datanode</value>
+  </property>
+</configuration>
