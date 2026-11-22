@@ -1,0 +1,182 @@
+getResouceBaseLocations() missing resource location folder: plugins
+########################################################################################################################
+                                               PDGF v2.6_#486b9c23_b4206
+                                           Parallel Data Generation Framework
+               (c)bankmark UG (haftungsbeschraenkt), Frank M., Danisch M., Rabl T. http://www.bankmark.de
+########################################################################################################################
+                                                  License information
+                                        End user license for ADABench Benchmark
+All rights reserved. bankmark UG (haftungsbeschraenkt). By using this software you have agreed to the terms and
+conditions specified in the PDGF license agreement.
+########################################################################################################################
+for a command overview start with commandline parameter: -help
+or type "help" in the built in shell: PDGF:> 
+
+Loading generic Plugin:pdgf.generator.FaceImagePlugin
+Loading generic Plugin:pdgf.generator.SpeechPlugin
+11:<generation>13:<property name="includeLabels" type="double"> '1.0' is overridden by value: '1.0' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+Parsing <schema> config file.. successful
+All required configuration files are loaded. You may start the generation process.
+getResouceBaseLocations() missing resource location folder: plugins
+########################################################################################################################
+                                               PDGF v2.6_#486b9c23_b4206
+                                           Parallel Data Generation Framework
+               (c)bankmark UG (haftungsbeschraenkt), Frank M., Danisch M., Rabl T. http://www.bankmark.de
+########################################################################################################################
+                                                  License information
+                                        End user license for ADABench Benchmark
+All rights reserved. bankmark UG (haftungsbeschraenkt). By using this software you have agreed to the terms and
+conditions specified in the PDGF license agreement.
+########################################################################################################################
+for a command overview start with commandline parameter: -help
+or type "help" in the built in shell: PDGF:> 
+
+Loading generic Plugin:pdgf.generator.FaceImagePlugin
+Loading generic Plugin:pdgf.generator.SpeechPlugin
+11:<generation>13:<property name="includeLabels" type="double"> '1.0' is overridden by value: '1.0' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+Parsing <schema> config file.. successful
+All required configuration files are loaded. You may start the generation process.
+getResouceBaseLocations() missing resource location folder: plugins
+########################################################################################################################
+                                               PDGF v2.6_#486b9c23_b4206
+                                           Parallel Data Generation Framework
+               (c)bankmark UG (haftungsbeschraenkt), Frank M., Danisch M., Rabl T. http://www.bankmark.de
+########################################################################################################################
+                                                  License information
+                                        End user license for ADABench Benchmark
+All rights reserved. bankmark UG (haftungsbeschraenkt). By using this software you have agreed to the terms and
+conditions specified in the PDGF license agreement.
+########################################################################################################################
+for a command overview start with commandline parameter: -help
+or type "help" in the built in shell: PDGF:> 
+
+unknown command: -l
+
+unknown command: -l
+
+set property 'SF' from -notSet- to: 2.125
+Set default output path to:"/home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/training/"
+set property 'MY_SEED' from -notSet- to: 1234.0
+set property 'includeLabels' from -notSet- to: 1.0
+set property 'TTVF' from -notSet- to: 1.0
+5:<schema name="predictiveanalytics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="structure/pdgfSchema.xsd">10:<property name="MY_SEED" type="long"> '4.23456789E9' is overridden by value: '1234.0' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+5:<schema name="predictiveanalytics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="structure/pdgfSchema.xsd">11:<property name="TTVF" type="double"> '1.0' is overridden by value: '1.0' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+5:<schema name="predictiveanalytics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="structure/pdgfSchema.xsd">12:<property name="includeLabels" type="double"> '1.0' is overridden by value: '1.0' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+Loading generic Plugin:pdgf.generator.FaceImagePlugin
+Loading generic Plugin:pdgf.generator.SpeechPlugin
+5:<schema name="predictiveanalytics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="structure/pdgfSchema.xsd">21:<property name="SF" type="double"> '1.0' is overridden by value: '2.125' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+11:<generation>13:<property name="includeLabels" type="double"> '1.0' is overridden by value: '1.0' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+Parsing <schema> config file.. successful
+All required configuration files are loaded. You may start the generation process.
+Selected generation mode: Generating only tables: 'lineitem','order','ProductRating','product','store_dept','order_weekly_sales'
+Initializing system...
+ Worker count was not specified. Detected 12 available processors and start now same amount of workers
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/oop/spark-kit/tpcx-ai-v2.0.0/lib/pdgf/extlib/FaceImage.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/oop/spark-kit/tpcx-ai-v2.0.0/lib/pdgf/extlib/SpeechPlugin.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.helpers.NOPLoggerFactory]
+Cloning data structures for parallelization...
+Clone time 0H0M6S43ms
+initialized 0H0M17S147ms
+Starting data generation proccess...
+Startuptime: 0H0M18S792ms
+FileChannelProvider is: pdgf.util.io.fileWriter.OutputFileWriter$DefaultFileChannelProvider
+
+generating 1/6 "ProductRating"	  rows: 1-14577 of 14577
+finished  1/6 "ProductRating"	  in: 0H0M0S215ms total size: 61 B average speed: 283 B/s
+
+generating 2/6 "order"	  rows: 1-7580237 of 7580237
+finished  2/6 "order"	  in: 0H0M7S68ms total size: 307.3 MiB average speed: 43.5 MiB/s
+
+generating 3/6 "lineitem"	  rows: 1-7580237 of 7580237
+finished  3/6 "lineitem"	  in: 0H0M9S103ms total size: 17 B average speed: 1 B/s
+
+generating 4/6 "store_dept"	  rows: 1-748 of 748
+finished  4/6 "store_dept"	  in: 0H0M0S7ms total size: 14.2 KiB average speed: 2.0 MiB/s
+
+generating 5/6 "order_weekly_sales"	  rows: 1-38896 of 38896
+finished  5/6 "order_weekly_sales"	  in: 0H0M0S119ms total size: 1.8 MiB average speed: 14.8 MiB/s
+
+generating 6/6 "product"	  rows: 1-1458 of 1458
+All work done
+Data generation finished successfully
+Statistics  
+=========
+Overall time	0H0M16S549ms
+Generated	309.1 MiB
+Speed		18.7 MiB/s
+
+getResouceBaseLocations() missing resource location folder: plugins
+########################################################################################################################
+                                               PDGF v2.6_#486b9c23_b4206
+                                           Parallel Data Generation Framework
+               (c)bankmark UG (haftungsbeschraenkt), Frank M., Danisch M., Rabl T. http://www.bankmark.de
+########################################################################################################################
+                                                  License information
+                                        End user license for ADABench Benchmark
+All rights reserved. bankmark UG (haftungsbeschraenkt). By using this software you have agreed to the terms and
+conditions specified in the PDGF license agreement.
+########################################################################################################################
+for a command overview start with commandline parameter: -help
+or type "help" in the built in shell: PDGF:> 
+
+unknown command: -l
+
+unknown command: -l
+
+set property 'SF' from -notSet- to: 2.125
+Set default output path to:"/home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/serving/"
+set property 'SF_TRAINING' from -notSet- to: 2.125
+set property 'MY_SEED' from -notSet- to: 1235.0
+set property 'includeLabels' from -notSet- to: 0.0
+set property 'TTVF' from -notSet- to: 0.10000000149011612
+5:<schema name="predictiveanalytics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="structure/pdgfSchema.xsd">10:<property name="MY_SEED" type="long"> '4.23456789E9' is overridden by value: '1235.0' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+5:<schema name="predictiveanalytics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="structure/pdgfSchema.xsd">11:<property name="TTVF" type="double"> '1.0' is overridden by value: '0.10000000149011612' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+5:<schema name="predictiveanalytics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="structure/pdgfSchema.xsd">12:<property name="includeLabels" type="double"> '1.0' is overridden by value: '0.0' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+Loading generic Plugin:pdgf.generator.FaceImagePlugin
+Loading generic Plugin:pdgf.generator.SpeechPlugin
+5:<schema name="predictiveanalytics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="structure/pdgfSchema.xsd">21:<property name="SF" type="double"> '1.0' is overridden by value: '2.125' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+5:<schema name="predictiveanalytics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="structure/pdgfSchema.xsd">22:<property name="SF_TRAINING" type="double"> '2.125' is overridden by value: '2.125' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+11:<generation>13:<property name="includeLabels" type="double"> '1.0' is overridden by value: '0.0' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+Parsing <schema> config file.. successful
+All required configuration files are loaded. You may start the generation process.
+Selected generation mode: Generating only tables: 'lineitem','order','ProductRating','product','store_dept','order_weekly_sales'
+Initializing system...
+ Worker count was not specified. Detected 12 available processors and start now same amount of workers
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/oop/spark-kit/tpcx-ai-v2.0.0/lib/pdgf/extlib/FaceImage.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/oop/spark-kit/tpcx-ai-v2.0.0/lib/pdgf/extlib/SpeechPlugin.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.helpers.NOPLoggerFactory]
+Cloning data structures for parallelization...
+Clone time 0H0M5S928ms
+initialized 0H0M17S422ms
+Starting data generation proccess...
+Startuptime: 0H0M19S871ms
+FileChannelProvider is: pdgf.util.io.fileWriter.OutputFileWriter$DefaultFileChannelProvider
+
+generating 1/6 "ProductRating"	  rows: 1-1458 of 1458
+finished  1/6 "ProductRating"	  in: 0H0M0S63ms total size: 50 B average speed: 793 B/s
+
+generating 2/6 "order"	  rows: 1-758023 of 758023
+finished  2/6 "order"	  in: 0H0M1S325ms total size: 27.3 MiB average speed: 20.6 MiB/s
+
+generating 3/6 "lineitem"	  rows: 1-758023 of 758023
+finished  3/6 "lineitem"	  in: 0H0M0S935ms total size: 25 B average speed: 26 B/s
+
+generating 4/6 "store_dept"	  rows: 1-748 of 748
+finished  4/6 "store_dept"	  in: 0H0M0S8ms total size: 16.4 KiB average speed: 2.0 MiB/s
+
+generating 5/6 "order_weekly_sales"	  rows: 1-38896 of 38896
+finished  5/6 "order_weekly_sales"	  in: 0H0M0S142ms total size: 1.8 MiB average speed: 12.6 MiB/s
+
+generating 6/6 "product"	  rows: 1-1458 of 1458
+All work done
+Data generation finished successfully
+Statistics  
+=========
+Overall time	0H0M2S514ms
+Generated	29.2 MiB
+Speed		11.6 MiB/s
+

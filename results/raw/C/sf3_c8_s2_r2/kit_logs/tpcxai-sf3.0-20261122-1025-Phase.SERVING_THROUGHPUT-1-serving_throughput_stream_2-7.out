@@ -1,0 +1,358 @@
+Creating output/output/uc07...
+2026-11-22 10:34:38,276 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-11-22 10:34:38,778 INFO spark.SparkContext: Running Spark version 3.0.3
+2026-11-22 10:34:38,820 INFO resource.ResourceUtils: ==============================================================
+2026-11-22 10:34:38,821 INFO resource.ResourceUtils: Resources for spark.driver:
+
+2026-11-22 10:34:38,822 INFO resource.ResourceUtils: ==============================================================
+2026-11-22 10:34:38,822 INFO spark.SparkContext: Submitted application: UseCase07$
+2026-11-22 10:34:38,885 INFO spark.SecurityManager: Changing view acls to: oop
+2026-11-22 10:34:38,885 INFO spark.SecurityManager: Changing modify acls to: oop
+2026-11-22 10:34:38,885 INFO spark.SecurityManager: Changing view acls groups to: 
+2026-11-22 10:34:38,885 INFO spark.SecurityManager: Changing modify acls groups to: 
+2026-11-22 10:34:38,885 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(oop); groups with view permissions: Set(); users  with modify permissions: Set(oop); groups with modify permissions: Set()
+2026-11-22 10:34:39,308 INFO util.Utils: Successfully started service 'sparkDriver' on port 38353.
+2026-11-22 10:34:39,353 INFO spark.SparkEnv: Registering MapOutputTracker
+2026-11-22 10:34:39,402 INFO spark.SparkEnv: Registering BlockManagerMaster
+2026-11-22 10:34:39,437 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2026-11-22 10:34:39,438 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2026-11-22 10:34:39,493 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+2026-11-22 10:34:39,516 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-c74af3e4-787a-4d95-ae6d-ebc793478252
+2026-11-22 10:34:39,544 INFO memory.MemoryStore: MemoryStore started with capacity 912.3 MiB
+2026-11-22 10:34:39,603 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+2026-11-22 10:34:39,727 INFO util.log: Logging initialized @2523ms to org.sparkproject.jetty.util.log.Slf4jLog
+2026-11-22 10:34:39,817 INFO server.Server: jetty-9.4.40.v20210413; built: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 1.8.0_504-8u504-ga-1ubuntu1~22.04.3-b01
+2026-11-22 10:34:39,901 INFO server.Server: Started @2698ms
+2026-11-22 10:34:39,950 INFO server.AbstractConnector: Started ServerConnector@2caf6912{HTTP/1.1, (http/1.1)}{127.0.0.1:4040}
+2026-11-22 10:34:39,950 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+2026-11-22 10:34:39,988 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@61e45f87{/jobs,null,AVAILABLE,@Spark}
+2026-11-22 10:34:39,992 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@187eb9a8{/jobs/json,null,AVAILABLE,@Spark}
+2026-11-22 10:34:39,993 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6ad11a56{/jobs/job,null,AVAILABLE,@Spark}
+2026-11-22 10:34:39,997 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7c8326a4{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-11-22 10:34:39,997 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@63429932{/stages,null,AVAILABLE,@Spark}
+2026-11-22 10:34:39,998 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@c9d82f9{/stages/json,null,AVAILABLE,@Spark}
+2026-11-22 10:34:39,999 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@18fdb6cf{/stages/stage,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,001 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@732bb66d{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,002 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@45f24169{/stages/pool,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,003 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4463d9d3{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,004 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5395ea39{/storage,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,006 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4fe01803{/storage/json,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,007 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6f6962ba{/storage/rdd,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,008 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@a0a9fa5{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,009 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@312afbc7{/environment,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,010 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7b60c3e{/environment/json,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,011 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6569dded{/executors,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,012 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@710d7aff{/executors/json,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,013 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@65327f5{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,014 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@301d8120{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,030 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@72458efc{/static,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,032 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6d467c87{/,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,033 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@57bd802b{/api,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,035 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@511d5d04{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,036 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@27068a50{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-11-22 10:34:40,040 INFO ui.SparkUI: Bound SparkUI to 127.0.0.1, and started at http://localhost:4040
+2026-11-22 10:34:40,064 INFO spark.SparkContext: Added JAR file:/home/oop/spark-kit/tpcx-ai-v2.0.0/lib/workload-assembly_2.12-0.1.jar at spark://localhost:38353/jars/workload-assembly_2.12-0.1.jar with timestamp 1795311278771
+2026-11-22 10:34:40,399 INFO client.RMProxy: Connecting to ResourceManager at localhost/127.0.0.1:8032
+2026-11-22 10:34:40,657 INFO yarn.Client: Requesting a new application from cluster with 1 NodeManagers
+2026-11-22 10:34:41,236 INFO conf.Configuration: resource-types.xml not found
+2026-11-22 10:34:41,237 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2026-11-22 10:34:41,263 INFO yarn.Client: Verifying our application has not requested more than the maximum memory capability of the cluster (5120 MB per container)
+2026-11-22 10:34:41,264 INFO yarn.Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+2026-11-22 10:34:41,265 INFO yarn.Client: Setting up container launch context for our AM
+2026-11-22 10:34:41,266 INFO yarn.Client: Setting up the launch environment for our AM container
+2026-11-22 10:34:41,280 INFO yarn.Client: Preparing resources for our AM container
+2026-11-22 10:34:41,344 WARN yarn.Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+2026-11-22 10:34:41,971 INFO yarn.Client: Uploading resource file:/tmp/spark-d777f827-24e2-47bb-8ed1-deaf09c52106/__spark_libs__5617083114431847595.zip -> hdfs://localhost:9000/user/oop/.sparkStaging/application_1795258901638_0069/__spark_libs__5617083114431847595.zip
+2026-11-22 10:34:47,400 INFO yarn.Client: Uploading resource file:/home/oop/spark-kit/tpcx-ai-v2.0.0/lib/config-1.4.2.jar -> hdfs://localhost:9000/user/oop/.sparkStaging/application_1795258901638_0069/config-1.4.2.jar
+2026-11-22 10:34:50,210 INFO yarn.Client: Uploading resource file:/home/oop/spark-kit/tpcx-ai-v2.0.0/lib/threeten-extra-0.9.jar -> hdfs://localhost:9000/user/oop/.sparkStaging/application_1795258901638_0069/threeten-extra-0.9.jar
+2026-11-22 10:34:50,662 INFO yarn.Client: Uploading resource file:/home/oop/spark-kit/tpcx-ai-v2.0.0/lib/scala_2.12/akka-actor_2.12-2.5.32.jar -> hdfs://localhost:9000/user/oop/.sparkStaging/application_1795258901638_0069/akka-actor_2.12-2.5.32.jar
+2026-11-22 10:34:51,073 INFO yarn.Client: Uploading resource file:/home/oop/spark-kit/tpcx-ai-v2.0.0/lib/scala_2.12/scallop_2.12-4.1.0.jar -> hdfs://localhost:9000/user/oop/.sparkStaging/application_1795258901638_0069/scallop_2.12-4.1.0.jar
+2026-11-22 10:34:51,508 INFO yarn.Client: Uploading resource file:/home/oop/spark-kit/tpcx-ai-v2.0.0/lib/scala_2.12/sparkts_2.12-0.4.1.jar -> hdfs://localhost:9000/user/oop/.sparkStaging/application_1795258901638_0069/sparkts_2.12-0.4.1.jar
+2026-11-22 10:34:52,988 INFO yarn.Client: Uploading resource file:/home/oop/spark-kit/tpcx-ai-v2.0.0/lib/scala_2.12/xgboost4j-spark_2.12-1.5.0.jar -> hdfs://localhost:9000/user/oop/.sparkStaging/application_1795258901638_0069/xgboost4j-spark_2.12-1.5.0.jar
+2026-11-22 10:34:54,685 INFO yarn.Client: Uploading resource file:/home/oop/spark-kit/tpcx-ai-v2.0.0/lib/scala_2.12/xgboost4j_2.12-1.5.0.jar -> hdfs://localhost:9000/user/oop/.sparkStaging/application_1795258901638_0069/xgboost4j_2.12-1.5.0.jar
+2026-11-22 10:34:55,657 INFO yarn.Client: Uploading resource file:/tmp/spark-d777f827-24e2-47bb-8ed1-deaf09c52106/__spark_conf__8704149493635463333.zip -> hdfs://localhost:9000/user/oop/.sparkStaging/application_1795258901638_0069/__spark_conf__.zip
+2026-11-22 10:34:55,728 INFO spark.SecurityManager: Changing view acls to: oop
+2026-11-22 10:34:55,729 INFO spark.SecurityManager: Changing modify acls to: oop
+2026-11-22 10:34:55,729 INFO spark.SecurityManager: Changing view acls groups to: 
+2026-11-22 10:34:55,729 INFO spark.SecurityManager: Changing modify acls groups to: 
+2026-11-22 10:34:55,729 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(oop); groups with view permissions: Set(); users  with modify permissions: Set(oop); groups with modify permissions: Set()
+2026-11-22 10:34:55,752 INFO yarn.Client: Submitting application application_1795258901638_0069 to ResourceManager
+2026-11-22 10:34:55,811 INFO impl.YarnClientImpl: Submitted application application_1795258901638_0069
+2026-11-22 10:34:56,822 INFO yarn.Client: Application report for application_1795258901638_0069 (state: ACCEPTED)
+2026-11-22 10:34:56,827 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: [Sun Nov 22 10:34:55 +0900 2026] Application is added to the scheduler and is not yet activated. Queue's AM resource limit exceeded.  Details : AM Partition = <DEFAULT_PARTITION>; AM Resource Request = <memory:1024, vCores:1>; Queue Resource Limit for AM = <memory:512, vCores:1>; User AM Resource Limit of the queue = <memory:512, vCores:1>; Queue AM Resource Usage = <memory:1024, vCores:1>; 
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1795311295772
+	 final status: UNDEFINED
+	 tracking URL: http://DESKTOP-CHOGNV4.localdomain:8088/proxy/application_1795258901638_0069/
+	 user: oop
+2026-11-22 10:34:57,836 INFO yarn.Client: Application report for application_1795258901638_0069 (state: ACCEPTED)
+2026-11-22 10:34:58,841 INFO yarn.Client: Application report for application_1795258901638_0069 (state: ACCEPTED)
+2026-11-22 10:34:59,843 INFO yarn.Client: Application report for application_1795258901638_0069 (state: ACCEPTED)
+2026-11-22 10:35:00,858 INFO yarn.Client: Application report for application_1795258901638_0069 (state: ACCEPTED)
+2026-11-22 10:35:01,873 INFO yarn.Client: Application report for application_1795258901638_0069 (state: ACCEPTED)
+2026-11-22 10:35:02,875 INFO yarn.Client: Application report for application_1795258901638_0069 (state: ACCEPTED)
+2026-11-22 10:35:03,890 INFO yarn.Client: Application report for application_1795258901638_0069 (state: ACCEPTED)
+2026-11-22 10:35:04,892 INFO yarn.Client: Application report for application_1795258901638_0069 (state: ACCEPTED)
+2026-11-22 10:35:05,895 INFO yarn.Client: Application report for application_1795258901638_0069 (state: RUNNING)
+2026-11-22 10:35:05,895 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.255.255.254
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1795311295772
+	 final status: UNDEFINED
+	 tracking URL: http://DESKTOP-CHOGNV4.localdomain:8088/proxy/application_1795258901638_0069/
+	 user: oop
+2026-11-22 10:35:05,896 INFO cluster.YarnClientSchedulerBackend: Application application_1795258901638_0069 has started running.
+2026-11-22 10:35:06,029 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41649.
+2026-11-22 10:35:06,030 INFO netty.NettyBlockTransferService: Server created on localhost:41649
+2026-11-22 10:35:06,031 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2026-11-22 10:35:06,039 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, localhost, 41649, None)
+2026-11-22 10:35:06,043 INFO storage.BlockManagerMasterEndpoint: Registering block manager localhost:41649 with 912.3 MiB RAM, BlockManagerId(driver, localhost, 41649, None)
+2026-11-22 10:35:06,045 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, localhost, 41649, None)
+2026-11-22 10:35:06,047 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, localhost, 41649, None)
+2026-11-22 10:35:06,163 INFO cluster.YarnClientSchedulerBackend: Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> DESKTOP-CHOGNV4.localdomain, PROXY_URI_BASES -> http://DESKTOP-CHOGNV4.localdomain:8088/proxy/application_1795258901638_0069), /proxy/application_1795258901638_0069
+2026-11-22 10:35:06,297 INFO ui.ServerInfo: Adding filter to /metrics/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2026-11-22 10:35:06,300 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@d2e6b0b{/metrics/json,null,AVAILABLE,@Spark}
+2026-11-22 10:35:06,993 INFO cluster.YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+2026-11-22 10:35:07,600 INFO history.SingleEventLogFileWriter: Logging events to hdfs://localhost:9000/spark-logs/application_1795258901638_0069.inprogress
+2026-11-22 10:35:10,263 INFO cluster.YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after waiting maxRegisteredResourcesWaitingTime: 30000000000(ns)
+output/data/serving/ProductRating.csv
+2026-11-22 10:35:10,400 INFO internal.SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/oop/spark-kit/tpcx-ai-v2.0.0/spark-warehouse').
+2026-11-22 10:35:10,400 INFO internal.SharedState: Warehouse path is 'file:/home/oop/spark-kit/tpcx-ai-v2.0.0/spark-warehouse'.
+2026-11-22 10:35:10,423 INFO ui.ServerInfo: Adding filter to /SQL: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2026-11-22 10:35:10,425 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@77429040{/SQL,null,AVAILABLE,@Spark}
+2026-11-22 10:35:10,425 INFO ui.ServerInfo: Adding filter to /SQL/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2026-11-22 10:35:10,426 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@234c5e41{/SQL/json,null,AVAILABLE,@Spark}
+2026-11-22 10:35:10,427 INFO ui.ServerInfo: Adding filter to /SQL/execution: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2026-11-22 10:35:10,428 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@413bef78{/SQL/execution,null,AVAILABLE,@Spark}
+2026-11-22 10:35:10,428 INFO ui.ServerInfo: Adding filter to /SQL/execution/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2026-11-22 10:35:10,429 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5d152bcd{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-11-22 10:35:10,430 INFO ui.ServerInfo: Adding filter to /static/sql: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2026-11-22 10:35:10,431 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3a36cd5{/static/sql,null,AVAILABLE,@Spark}
+2026-11-22 10:35:10,574 INFO resource.ResourceProfile: Default ResourceProfile created, executor resources: Map(memoryOverhead -> name: memoryOverhead, amount: 512, script: , vendor: , cores -> name: cores, amount: 8, script: , vendor: , memory -> name: memory, amount: 3072, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2026-11-22 10:35:11,360 INFO datasources.InMemoryFileIndex: It took 51 ms to list leaf files for 1 paths.
+2026-11-22 10:35:11,506 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (127.0.0.1:56182) with ID 1
+2026-11-22 10:35:11,632 INFO storage.BlockManagerMasterEndpoint: Registering block manager DESKTOP-CHOGNV4.localdomain:36277 with 1458.6 MiB RAM, BlockManagerId(1, DESKTOP-CHOGNV4.localdomain, 36277, None)
+load time:	PT2.330454965S
+pre-process time:	PT0.000008497S
+2026-11-22 10:35:12,866 INFO memory.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 294.2 KiB, free 912.0 MiB)
+2026-11-22 10:35:12,921 INFO memory.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 27.4 KiB, free 912.0 MiB)
+2026-11-22 10:35:12,924 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:41649 (size: 27.4 KiB, free: 912.3 MiB)
+2026-11-22 10:35:13,006 INFO spark.SparkContext: Created broadcast 0 from textFile at ReadWrite.scala:587
+2026-11-22 10:35:13,263 INFO mapred.FileInputFormat: Total input files to process : 1
+2026-11-22 10:35:13,352 INFO spark.SparkContext: Starting job: first at ReadWrite.scala:587
+2026-11-22 10:35:13,373 INFO scheduler.DAGScheduler: Got job 0 (first at ReadWrite.scala:587) with 1 output partitions
+2026-11-22 10:35:13,374 INFO scheduler.DAGScheduler: Final stage: ResultStage 0 (first at ReadWrite.scala:587)
+2026-11-22 10:35:13,374 INFO scheduler.DAGScheduler: Parents of final stage: List()
+2026-11-22 10:35:13,376 INFO scheduler.DAGScheduler: Missing parents: List()
+2026-11-22 10:35:13,382 INFO scheduler.DAGScheduler: Submitting ResultStage 0 (output/model/uc07/uc07.spark.model/metadata MapPartitionsRDD[1] at textFile at ReadWrite.scala:587), which has no missing parents
+2026-11-22 10:35:13,414 INFO memory.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.1 KiB, free 912.0 MiB)
+2026-11-22 10:35:13,418 INFO memory.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.4 KiB, free 912.0 MiB)
+2026-11-22 10:35:13,420 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:41649 (size: 2.4 KiB, free: 912.3 MiB)
+2026-11-22 10:35:13,421 INFO spark.SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1223
+2026-11-22 10:35:13,449 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (output/model/uc07/uc07.spark.model/metadata MapPartitionsRDD[1] at textFile at ReadWrite.scala:587) (first 15 tasks are for partitions Vector(0))
+2026-11-22 10:35:13,451 INFO cluster.YarnScheduler: Adding task set 0.0 with 1 tasks
+2026-11-22 10:35:13,510 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, DESKTOP-CHOGNV4.localdomain, executor 1, partition 0, NODE_LOCAL, 7437 bytes)
+2026-11-22 10:35:13,821 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on DESKTOP-CHOGNV4.localdomain:36277 (size: 2.4 KiB, free: 1458.6 MiB)
+2026-11-22 10:35:14,324 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on DESKTOP-CHOGNV4.localdomain:36277 (size: 27.4 KiB, free: 1458.6 MiB)
+2026-11-22 10:35:15,832 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 2342 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (1/1)
+2026-11-22 10:35:15,834 INFO cluster.YarnScheduler: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2026-11-22 10:35:15,839 INFO scheduler.DAGScheduler: ResultStage 0 (first at ReadWrite.scala:587) finished in 2.429 s
+2026-11-22 10:35:15,842 INFO scheduler.DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2026-11-22 10:35:15,842 INFO cluster.YarnScheduler: Killing all running tasks in stage 0: Stage finished
+2026-11-22 10:35:15,844 INFO scheduler.DAGScheduler: Job 0 finished: first at ReadWrite.scala:587, took 2.491821 s
+2026-11-22 10:35:15,912 INFO datasources.InMemoryFileIndex: It took 26 ms to list leaf files for 1 paths.
+2026-11-22 10:35:15,967 INFO spark.SparkContext: Starting job: load at ALS.scala:544
+2026-11-22 10:35:15,968 INFO scheduler.DAGScheduler: Got job 1 (load at ALS.scala:544) with 1 output partitions
+2026-11-22 10:35:15,968 INFO scheduler.DAGScheduler: Final stage: ResultStage 1 (load at ALS.scala:544)
+2026-11-22 10:35:15,968 INFO scheduler.DAGScheduler: Parents of final stage: List()
+2026-11-22 10:35:15,969 INFO scheduler.DAGScheduler: Missing parents: List()
+2026-11-22 10:35:15,969 INFO scheduler.DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[3] at load at ALS.scala:544), which has no missing parents
+2026-11-22 10:35:15,981 INFO memory.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 86.9 KiB, free 911.9 MiB)
+2026-11-22 10:35:15,983 INFO memory.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 31.0 KiB, free 911.9 MiB)
+2026-11-22 10:35:15,984 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:41649 (size: 31.0 KiB, free: 912.2 MiB)
+2026-11-22 10:35:15,985 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1223
+2026-11-22 10:35:15,986 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[3] at load at ALS.scala:544) (first 15 tasks are for partitions Vector(0))
+2026-11-22 10:35:15,986 INFO cluster.YarnScheduler: Adding task set 1.0 with 1 tasks
+2026-11-22 10:35:15,990 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, DESKTOP-CHOGNV4.localdomain, executor 1, partition 0, PROCESS_LOCAL, 7604 bytes)
+2026-11-22 10:35:16,017 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on DESKTOP-CHOGNV4.localdomain:36277 (size: 31.0 KiB, free: 1458.5 MiB)
+2026-11-22 10:35:16,330 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 343 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (1/1)
+2026-11-22 10:35:16,330 INFO cluster.YarnScheduler: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2026-11-22 10:35:16,331 INFO scheduler.DAGScheduler: ResultStage 1 (load at ALS.scala:544) finished in 0.360 s
+2026-11-22 10:35:16,331 INFO scheduler.DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2026-11-22 10:35:16,331 INFO cluster.YarnScheduler: Killing all running tasks in stage 1: Stage finished
+2026-11-22 10:35:16,332 INFO scheduler.DAGScheduler: Job 1 finished: load at ALS.scala:544, took 0.364148 s
+2026-11-22 10:35:16,360 INFO datasources.InMemoryFileIndex: It took 11 ms to list leaf files for 1 paths.
+2026-11-22 10:35:16,383 INFO spark.SparkContext: Starting job: load at ALS.scala:546
+2026-11-22 10:35:16,384 INFO scheduler.DAGScheduler: Got job 2 (load at ALS.scala:546) with 1 output partitions
+2026-11-22 10:35:16,384 INFO scheduler.DAGScheduler: Final stage: ResultStage 2 (load at ALS.scala:546)
+2026-11-22 10:35:16,384 INFO scheduler.DAGScheduler: Parents of final stage: List()
+2026-11-22 10:35:16,384 INFO scheduler.DAGScheduler: Missing parents: List()
+2026-11-22 10:35:16,385 INFO scheduler.DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[5] at load at ALS.scala:546), which has no missing parents
+2026-11-22 10:35:16,396 INFO memory.MemoryStore: Block broadcast_3 stored as values in memory (estimated size 86.9 KiB, free 911.8 MiB)
+2026-11-22 10:35:16,399 INFO memory.MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 31.0 KiB, free 911.7 MiB)
+2026-11-22 10:35:16,400 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on localhost:41649 (size: 31.0 KiB, free: 912.2 MiB)
+2026-11-22 10:35:16,400 INFO spark.SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1223
+2026-11-22 10:35:16,401 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[5] at load at ALS.scala:546) (first 15 tasks are for partitions Vector(0))
+2026-11-22 10:35:16,401 INFO cluster.YarnScheduler: Adding task set 2.0 with 1 tasks
+2026-11-22 10:35:16,404 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, DESKTOP-CHOGNV4.localdomain, executor 1, partition 0, PROCESS_LOCAL, 7604 bytes)
+2026-11-22 10:35:16,426 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on DESKTOP-CHOGNV4.localdomain:36277 (size: 31.0 KiB, free: 1458.5 MiB)
+2026-11-22 10:35:16,462 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 59 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (1/1)
+2026-11-22 10:35:16,462 INFO cluster.YarnScheduler: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2026-11-22 10:35:16,463 INFO scheduler.DAGScheduler: ResultStage 2 (load at ALS.scala:546) finished in 0.077 s
+2026-11-22 10:35:16,463 INFO scheduler.DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+2026-11-22 10:35:16,464 INFO cluster.YarnScheduler: Killing all running tasks in stage 2: Stage finished
+2026-11-22 10:35:16,464 INFO scheduler.DAGScheduler: Job 2 finished: load at ALS.scala:546, took 0.081032 s
+(serve time:	,PT0.2279263S)
+2026-11-22 10:35:17,480 INFO datasources.FileSourceStrategy: Pushed Filters: 
+2026-11-22 10:35:17,481 INFO datasources.FileSourceStrategy: Post-Scan Filters: 
+2026-11-22 10:35:17,484 INFO datasources.FileSourceStrategy: Output Data Schema: struct<userID: bigint, productID: bigint>
+2026-11-22 10:35:17,499 INFO datasources.FileSourceStrategy: Pushed Filters: IsNotNull(id)
+2026-11-22 10:35:17,499 INFO datasources.FileSourceStrategy: Post-Scan Filters: isnotnull(id#4)
+2026-11-22 10:35:17,499 INFO datasources.FileSourceStrategy: Output Data Schema: struct<id: int, features: array<float>>
+2026-11-22 10:35:17,505 INFO datasources.FileSourceStrategy: Pushed Filters: IsNotNull(id)
+2026-11-22 10:35:17,506 INFO datasources.FileSourceStrategy: Post-Scan Filters: isnotnull(id#8)
+2026-11-22 10:35:17,506 INFO datasources.FileSourceStrategy: Output Data Schema: struct<id: int, features: array<float>>
+2026-11-22 10:35:17,781 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2026-11-22 10:35:17,781 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-22 10:35:17,783 INFO datasources.SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-22 10:35:18,048 INFO codegen.CodeGenerator: Code generated in 217.564944 ms
+2026-11-22 10:35:18,049 INFO codegen.CodeGenerator: Code generated in 217.776897 ms
+2026-11-22 10:35:18,084 INFO memory.MemoryStore: Block broadcast_4 stored as values in memory (estimated size 314.2 KiB, free 911.4 MiB)
+2026-11-22 10:35:18,084 INFO memory.MemoryStore: Block broadcast_5 stored as values in memory (estimated size 314.2 KiB, free 911.1 MiB)
+2026-11-22 10:35:18,092 INFO memory.MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 29.6 KiB, free 911.1 MiB)
+2026-11-22 10:35:18,094 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on localhost:41649 (size: 29.6 KiB, free: 912.2 MiB)
+2026-11-22 10:35:18,096 INFO spark.SparkContext: Created broadcast 5 from $anonfun$withThreadLocalCaptured$1 at FutureTask.java:266
+2026-11-22 10:35:18,096 INFO memory.MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 29.6 KiB, free 911.1 MiB)
+2026-11-22 10:35:18,097 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on localhost:41649 (size: 29.6 KiB, free: 912.2 MiB)
+2026-11-22 10:35:18,099 INFO spark.SparkContext: Created broadcast 4 from $anonfun$withThreadLocalCaptured$1 at FutureTask.java:266
+2026-11-22 10:35:18,118 INFO execution.FileSourceScanExec: Planning scan with bin packing, max size: 10552822 bytes, open cost is considered as scanning 4194304 bytes.
+2026-11-22 10:35:18,118 INFO execution.FileSourceScanExec: Planning scan with bin packing, max size: 10559607 bytes, open cost is considered as scanning 4194304 bytes.
+2026-11-22 10:35:18,252 INFO spark.SparkContext: Starting job: $anonfun$withThreadLocalCaptured$1 at FutureTask.java:266
+2026-11-22 10:35:18,254 INFO scheduler.DAGScheduler: Got job 3 ($anonfun$withThreadLocalCaptured$1 at FutureTask.java:266) with 7 output partitions
+2026-11-22 10:35:18,254 INFO spark.SparkContext: Starting job: $anonfun$withThreadLocalCaptured$1 at FutureTask.java:266
+2026-11-22 10:35:18,254 INFO scheduler.DAGScheduler: Final stage: ResultStage 3 ($anonfun$withThreadLocalCaptured$1 at FutureTask.java:266)
+2026-11-22 10:35:18,254 INFO scheduler.DAGScheduler: Parents of final stage: List()
+2026-11-22 10:35:18,254 INFO scheduler.DAGScheduler: Missing parents: List()
+2026-11-22 10:35:18,256 INFO scheduler.DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[12] at $anonfun$withThreadLocalCaptured$1 at FutureTask.java:266), which has no missing parents
+2026-11-22 10:35:18,263 INFO memory.MemoryStore: Block broadcast_6 stored as values in memory (estimated size 13.8 KiB, free 911.1 MiB)
+2026-11-22 10:35:18,265 INFO memory.MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 6.6 KiB, free 911.1 MiB)
+2026-11-22 10:35:18,267 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on localhost:41649 (size: 6.6 KiB, free: 912.1 MiB)
+2026-11-22 10:35:18,267 INFO spark.SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1223
+2026-11-22 10:35:18,268 INFO scheduler.DAGScheduler: Submitting 7 missing tasks from ResultStage 3 (MapPartitionsRDD[12] at $anonfun$withThreadLocalCaptured$1 at FutureTask.java:266) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6))
+2026-11-22 10:35:18,269 INFO cluster.YarnScheduler: Adding task set 3.0 with 7 tasks
+2026-11-22 10:35:18,271 INFO scheduler.DAGScheduler: Got job 4 ($anonfun$withThreadLocalCaptured$1 at FutureTask.java:266) with 7 output partitions
+2026-11-22 10:35:18,271 INFO scheduler.DAGScheduler: Final stage: ResultStage 4 ($anonfun$withThreadLocalCaptured$1 at FutureTask.java:266)
+2026-11-22 10:35:18,271 INFO scheduler.DAGScheduler: Parents of final stage: List()
+2026-11-22 10:35:18,271 INFO scheduler.DAGScheduler: Missing parents: List()
+2026-11-22 10:35:18,275 INFO scheduler.DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[13] at $anonfun$withThreadLocalCaptured$1 at FutureTask.java:266), which has no missing parents
+2026-11-22 10:35:18,278 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3, DESKTOP-CHOGNV4.localdomain, executor 1, partition 0, NODE_LOCAL, 8203 bytes)
+2026-11-22 10:35:18,279 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 3.0 (TID 4, DESKTOP-CHOGNV4.localdomain, executor 1, partition 1, NODE_LOCAL, 8203 bytes)
+2026-11-22 10:35:18,279 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 3.0 (TID 5, DESKTOP-CHOGNV4.localdomain, executor 1, partition 2, NODE_LOCAL, 8203 bytes)
+2026-11-22 10:35:18,280 INFO memory.MemoryStore: Block broadcast_7 stored as values in memory (estimated size 13.8 KiB, free 911.0 MiB)
+2026-11-22 10:35:18,280 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 3.0 (TID 6, DESKTOP-CHOGNV4.localdomain, executor 1, partition 3, NODE_LOCAL, 8203 bytes)
+2026-11-22 10:35:18,281 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 3.0 (TID 7, DESKTOP-CHOGNV4.localdomain, executor 1, partition 4, NODE_LOCAL, 8203 bytes)
+2026-11-22 10:35:18,282 INFO memory.MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 6.6 KiB, free 911.0 MiB)
+2026-11-22 10:35:18,282 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 3.0 (TID 8, DESKTOP-CHOGNV4.localdomain, executor 1, partition 5, NODE_LOCAL, 8203 bytes)
+2026-11-22 10:35:18,282 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 3.0 (TID 9, DESKTOP-CHOGNV4.localdomain, executor 1, partition 6, NODE_LOCAL, 8028 bytes)
+2026-11-22 10:35:18,283 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on localhost:41649 (size: 6.6 KiB, free: 912.1 MiB)
+2026-11-22 10:35:18,284 INFO spark.SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1223
+2026-11-22 10:35:18,285 INFO scheduler.DAGScheduler: Submitting 7 missing tasks from ResultStage 4 (MapPartitionsRDD[13] at $anonfun$withThreadLocalCaptured$1 at FutureTask.java:266) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6))
+2026-11-22 10:35:18,286 INFO cluster.YarnScheduler: Adding task set 4.0 with 7 tasks
+2026-11-22 10:35:18,289 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 4.0 (TID 10, DESKTOP-CHOGNV4.localdomain, executor 1, partition 0, NODE_LOCAL, 8203 bytes)
+2026-11-22 10:35:18,348 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on DESKTOP-CHOGNV4.localdomain:36277 (size: 6.6 KiB, free: 1458.5 MiB)
+2026-11-22 10:35:18,351 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on DESKTOP-CHOGNV4.localdomain:36277 (size: 6.6 KiB, free: 1458.5 MiB)
+2026-11-22 10:35:19,211 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on DESKTOP-CHOGNV4.localdomain:36277 (size: 29.6 KiB, free: 1458.5 MiB)
+2026-11-22 10:35:19,212 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on DESKTOP-CHOGNV4.localdomain:36277 (size: 29.6 KiB, free: 1458.4 MiB)
+2026-11-22 10:35:19,838 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 4.0 (TID 11, DESKTOP-CHOGNV4.localdomain, executor 1, partition 1, NODE_LOCAL, 8203 bytes)
+2026-11-22 10:35:19,839 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 3.0 (TID 9) in 1557 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (1/7)
+2026-11-22 10:35:19,880 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 4.0 (TID 12, DESKTOP-CHOGNV4.localdomain, executor 1, partition 2, NODE_LOCAL, 8203 bytes)
+2026-11-22 10:35:19,881 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 1610 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (2/7)
+2026-11-22 10:35:19,889 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 4.0 (TID 13, DESKTOP-CHOGNV4.localdomain, executor 1, partition 3, NODE_LOCAL, 8203 bytes)
+2026-11-22 10:35:19,891 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 3.0 (TID 5) in 1612 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (3/7)
+2026-11-22 10:35:19,900 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 4.0 (TID 14, DESKTOP-CHOGNV4.localdomain, executor 1, partition 4, NODE_LOCAL, 8203 bytes)
+2026-11-22 10:35:19,903 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 3.0 (TID 8) in 1621 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (4/7)
+2026-11-22 10:35:19,912 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 4.0 (TID 15, DESKTOP-CHOGNV4.localdomain, executor 1, partition 5, NODE_LOCAL, 8203 bytes)
+2026-11-22 10:35:19,913 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 3.0 (TID 7) in 1632 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (5/7)
+2026-11-22 10:35:19,915 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 3.0 (TID 6) in 1636 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (6/7)
+2026-11-22 10:35:19,921 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 4.0 (TID 16, DESKTOP-CHOGNV4.localdomain, executor 1, partition 6, NODE_LOCAL, 8028 bytes)
+2026-11-22 10:35:19,929 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 4.0 (TID 10) in 1641 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (1/7)
+2026-11-22 10:35:19,932 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 3.0 (TID 4) in 1654 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (7/7)
+2026-11-22 10:35:19,932 INFO cluster.YarnScheduler: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2026-11-22 10:35:19,935 INFO scheduler.DAGScheduler: ResultStage 3 ($anonfun$withThreadLocalCaptured$1 at FutureTask.java:266) finished in 1.673 s
+2026-11-22 10:35:19,935 INFO scheduler.DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+2026-11-22 10:35:19,935 INFO cluster.YarnScheduler: Killing all running tasks in stage 3: Stage finished
+2026-11-22 10:35:19,942 INFO scheduler.DAGScheduler: Job 3 finished: $anonfun$withThreadLocalCaptured$1 at FutureTask.java:266, took 1.688891 s
+2026-11-22 10:35:20,028 INFO codegen.CodeGenerator: Code generated in 29.793654 ms
+2026-11-22 10:35:20,060 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 4.0 (TID 11) in 223 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (2/7)
+2026-11-22 10:35:20,091 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 4.0 (TID 16) in 171 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (3/7)
+2026-11-22 10:35:20,130 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 4.0 (TID 13) in 241 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (4/7)
+2026-11-22 10:35:20,131 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 4.0 (TID 12) in 252 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (5/7)
+2026-11-22 10:35:20,133 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 4.0 (TID 14) in 233 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (6/7)
+2026-11-22 10:35:20,135 INFO memory.MemoryStore: Block broadcast_8 stored as values in memory (estimated size 2.1 MiB, free 908.9 MiB)
+2026-11-22 10:35:20,157 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 4.0 (TID 15) in 246 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (7/7)
+2026-11-22 10:35:20,158 INFO cluster.YarnScheduler: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2026-11-22 10:35:20,159 INFO memory.MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 711.6 KiB, free 908.2 MiB)
+2026-11-22 10:35:20,159 INFO scheduler.DAGScheduler: ResultStage 4 ($anonfun$withThreadLocalCaptured$1 at FutureTask.java:266) finished in 1.881 s
+2026-11-22 10:35:20,161 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on localhost:41649 (size: 711.6 KiB, free: 911.4 MiB)
+2026-11-22 10:35:20,162 INFO spark.SparkContext: Created broadcast 8 from $anonfun$withThreadLocalCaptured$1 at FutureTask.java:266
+2026-11-22 10:35:20,165 INFO scheduler.DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+2026-11-22 10:35:20,165 INFO cluster.YarnScheduler: Killing all running tasks in stage 4: Stage finished
+2026-11-22 10:35:20,169 INFO scheduler.DAGScheduler: Job 4 finished: $anonfun$withThreadLocalCaptured$1 at FutureTask.java:266, took 1.914632 s
+2026-11-22 10:35:20,205 INFO memory.MemoryStore: Block broadcast_9 stored as values in memory (estimated size 2.1 MiB, free 906.1 MiB)
+2026-11-22 10:35:20,214 INFO memory.MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 649.0 KiB, free 905.5 MiB)
+2026-11-22 10:35:20,215 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on localhost:41649 (size: 649.0 KiB, free: 910.8 MiB)
+2026-11-22 10:35:20,216 INFO spark.SparkContext: Created broadcast 9 from $anonfun$withThreadLocalCaptured$1 at FutureTask.java:266
+2026-11-22 10:35:20,330 INFO codegen.CodeGenerator: Code generated in 75.90095 ms
+2026-11-22 10:35:20,337 INFO memory.MemoryStore: Block broadcast_10 stored as values in memory (estimated size 309.5 KiB, free 905.2 MiB)
+2026-11-22 10:35:20,348 INFO memory.MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 29.0 KiB, free 905.2 MiB)
+2026-11-22 10:35:20,349 INFO storage.BlockManagerInfo: Added broadcast_10_piece0 in memory on localhost:41649 (size: 29.0 KiB, free: 910.8 MiB)
+2026-11-22 10:35:20,350 INFO spark.SparkContext: Created broadcast 10 from csv at UseCase07.scala:103
+2026-11-22 10:35:20,356 INFO execution.FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+2026-11-22 10:35:20,462 INFO spark.SparkContext: Starting job: csv at UseCase07.scala:103
+2026-11-22 10:35:20,465 INFO scheduler.DAGScheduler: Got job 5 (csv at UseCase07.scala:103) with 1 output partitions
+2026-11-22 10:35:20,465 INFO scheduler.DAGScheduler: Final stage: ResultStage 5 (csv at UseCase07.scala:103)
+2026-11-22 10:35:20,465 INFO scheduler.DAGScheduler: Parents of final stage: List()
+2026-11-22 10:35:20,465 INFO scheduler.DAGScheduler: Missing parents: List()
+2026-11-22 10:35:20,467 INFO scheduler.DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[16] at csv at UseCase07.scala:103), which has no missing parents
+2026-11-22 10:35:20,494 INFO memory.MemoryStore: Block broadcast_11 stored as values in memory (estimated size 194.5 KiB, free 905.0 MiB)
+2026-11-22 10:35:20,497 INFO memory.MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 71.0 KiB, free 904.9 MiB)
+2026-11-22 10:35:20,498 INFO storage.BlockManagerInfo: Added broadcast_11_piece0 in memory on localhost:41649 (size: 71.0 KiB, free: 910.7 MiB)
+2026-11-22 10:35:20,499 INFO spark.SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1223
+2026-11-22 10:35:20,500 INFO scheduler.DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[16] at csv at UseCase07.scala:103) (first 15 tasks are for partitions Vector(0))
+2026-11-22 10:35:20,500 INFO cluster.YarnScheduler: Adding task set 5.0 with 1 tasks
+2026-11-22 10:35:20,502 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 5.0 (TID 17, DESKTOP-CHOGNV4.localdomain, executor 1, partition 0, NODE_LOCAL, 7776 bytes)
+2026-11-22 10:35:20,520 INFO storage.BlockManagerInfo: Added broadcast_11_piece0 in memory on DESKTOP-CHOGNV4.localdomain:36277 (size: 71.0 KiB, free: 1458.4 MiB)
+2026-11-22 10:35:20,828 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on DESKTOP-CHOGNV4.localdomain:36277 (size: 711.6 KiB, free: 1457.7 MiB)
+2026-11-22 10:35:20,867 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on DESKTOP-CHOGNV4.localdomain:36277 (size: 649.0 KiB, free: 1457.0 MiB)
+2026-11-22 10:35:21,030 INFO storage.BlockManagerInfo: Added broadcast_10_piece0 in memory on DESKTOP-CHOGNV4.localdomain:36277 (size: 29.0 KiB, free: 1457.0 MiB)
+2026-11-22 10:35:22,306 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 5.0 (TID 17) in 1805 ms on DESKTOP-CHOGNV4.localdomain (executor 1) (1/1)
+2026-11-22 10:35:22,306 INFO cluster.YarnScheduler: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2026-11-22 10:35:22,307 INFO scheduler.DAGScheduler: ResultStage 5 (csv at UseCase07.scala:103) finished in 1.838 s
+2026-11-22 10:35:22,307 INFO scheduler.DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+2026-11-22 10:35:22,307 INFO cluster.YarnScheduler: Killing all running tasks in stage 5: Stage finished
+2026-11-22 10:35:22,308 INFO scheduler.DAGScheduler: Job 5 finished: csv at UseCase07.scala:103, took 1.846011 s
+2026-11-22 10:35:22,422 INFO datasources.FileFormatWriter: Write Job d5ab6111-d974-438a-b73c-fd3b92858777 committed.
+2026-11-22 10:35:22,425 INFO datasources.FileFormatWriter: Finished processing stats for write job d5ab6111-d974-438a-b73c-fd3b92858777.
+2026-11-22 10:35:22,434 INFO spark.SparkContext: Invoking stop() from shutdown hook
+2026-11-22 10:35:22,448 INFO server.AbstractConnector: Stopped Spark@2caf6912{HTTP/1.1, (http/1.1)}{127.0.0.1:4040}
+2026-11-22 10:35:22,450 INFO ui.SparkUI: Stopped Spark web UI at http://localhost:4040
+2026-11-22 10:35:22,456 INFO cluster.YarnClientSchedulerBackend: Interrupting monitor thread
+2026-11-22 10:35:22,480 INFO cluster.YarnClientSchedulerBackend: Shutting down all executors
+2026-11-22 10:35:22,481 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Asking each executor to shut down
+2026-11-22 10:35:22,488 INFO cluster.YarnClientSchedulerBackend: YARN client scheduler backend Stopped
+2026-11-22 10:35:22,938 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+2026-11-22 10:35:22,947 INFO memory.MemoryStore: MemoryStore cleared
+2026-11-22 10:35:22,947 INFO storage.BlockManager: BlockManager stopped
+2026-11-22 10:35:22,954 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+2026-11-22 10:35:22,957 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+2026-11-22 10:35:22,965 INFO spark.SparkContext: Successfully stopped SparkContext
+2026-11-22 10:35:22,966 INFO util.ShutdownHookManager: Shutdown hook called
+2026-11-22 10:35:22,966 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-d777f827-24e2-47bb-8ed1-deaf09c52106
+2026-11-22 10:35:22,969 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-856af7e5-f99a-4ba2-ae08-3dd77a44263c

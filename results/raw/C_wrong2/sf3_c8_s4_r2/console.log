@@ -1,0 +1,290 @@
+tpcxai_home: /home/oop/spark-kit/tpcx-ai-v2.0.0
+initializing Phase.DATA_GENERATION (1) for uc 0
+getResouceBaseLocations() missing resource location folder: plugins
+########################################################################################################################
+                                               PDGF v2.6_#486b9c23_b4206
+                                           Parallel Data Generation Framework
+               (c)bankmark UG (haftungsbeschraenkt), Frank M., Danisch M., Rabl T. http://www.bankmark.de
+########################################################################################################################
+                                                  License information
+                                        End user license for ADABench Benchmark
+All rights reserved. bankmark UG (haftungsbeschraenkt). By using this software you have agreed to the terms and
+conditions specified in the PDGF license agreement.
+########################################################################################################################
+for a command overview start with commandline parameter: -help
+or type "help" in the built in shell: PDGF:> 
+
+Loading generic Plugin:pdgf.generator.FaceImagePlugin
+Loading generic Plugin:pdgf.generator.SpeechPlugin
+11:<generation>13:<property name="includeLabels" type="double"> '1.0' is overridden by value: '1.0' .This happens if the property is manually set by the user via command line argument or was already defined in config file in a line before this line..
+Parsing <schema> config file.. successful
+All required configuration files are loaded. You may start the generation process.
+time: 1.874s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/training/store_dept.csv
+time: 0.072s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/serving/store_dept.csv
+time: 0.067s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/scoring/store_dept.csv
+time: 0.069s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/training/order.csv
+time: 0.073s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/serving/order.csv
+time: 0.067s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/scoring/order.csv
+time: 0.07s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/training/lineitem.csv
+time: 0.071s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/serving/lineitem.csv
+time: 0.071s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/scoring/lineitem.csv
+time: 0.07s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/training/product.csv
+time: 0.075s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/serving/product.csv
+time: 0.086s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/scoring/product.csv
+time: 0.071s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/training/store_dept.csv
+time: 1.37s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/serving/store_dept.csv
+time: 1.535s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/scoring/store_dept.csv
+time: 1.508s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/training/order.csv
+time: 1.547s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/serving/order.csv
+time: 1.436s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/scoring/order.csv
+time: 1.381s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/training/lineitem.csv
+time: 1.465s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/serving/lineitem.csv
+time: 1.393s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/scoring/lineitem.csv
+time: 1.41s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/training/product.csv
+time: 1.532s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/serving/product.csv
+time: 1.402s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/scoring/product.csv
+time: 1.389s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/scoring/store_dept_labels.csv
+time: 1.631s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/model/uc03
+time: 1.389s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/output/uc03
+time: 1.398s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/training/ProductRating.csv
+time: 0.029s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/serving/ProductRating.csv
+time: 0.032s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+rm -rf /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/scoring/ProductRating.csv
+time: 0.032s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/training/ProductRating.csv
+time: 1.548s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/serving/ProductRating.csv
+time: 1.378s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/data/scoring/ProductRating.csv
+time: 1.649s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/scoring/ProductRating_labels.csv
+time: 1.755s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/model/uc07
+time: 1.393s
+SUCCESS
+running Phase.CLEAN (1) for uc 0
+hdfs dfs -rm -r -f -skipTrash output/output/uc07
+time: 1.366s
+SUCCESS
+running Phase.DATA_GENERATION (1) for uc 0
+time: 35.67s
+SUCCESS
+running Phase.DATA_GENERATION (1) for uc 0
+time: 21.188s
+SUCCESS
+preparing Phase.LOADING (1) for uc 0
+time: 1.726s
+SUCCESS
+preparing Phase.LOADING (1) for uc 0
+time: 1.444s
+SUCCESS
+running Phase.LOADING (1) for uc 0
+time: 20.619s
+SUCCESS
+running Phase.LOADING (1) for uc 0
+time: 7.262s
+SUCCESS
+running Phase.LOADING (1) for uc 0
+time: 1.777s
+SUCCESS
+running Phase.LOADING (1) for uc 0
+time: 2.138s
+SUCCESS
+preparing Phase.TRAINING (1) for uc 3
+time: 1.87s
+SUCCESS
+preparing Phase.TRAINING (1) for uc 7
+time: 1.997s
+SUCCESS
+running Phase.TRAINING (1) for uc 3
+time: 161.688s
+SUCCESS
+running Phase.TRAINING (1) for uc 7
+time: 70.5s
+SUCCESS
+preparing Phase.SERVING (1) for uc 3
+time: 2.335s
+SUCCESS
+preparing Phase.SERVING (1) for uc 7
+time: 1.542s
+SUCCESS
+running Phase.SERVING (1) for uc 3
+time: 38.793s
+SUCCESS
+running Phase.SERVING (1) for uc 7
+time: 30.437s
+SUCCESS
+running Phase.SCORING_DATAGEN (1) for uc 0
+time: 23.796s
+SUCCESS
+preparing Phase.SCORING_LOADING (1) for uc 3
+time: 2.005s
+SUCCESS
+preparing Phase.SCORING_LOADING (1) for uc 7
+time: 1.866s
+SUCCESS
+running Phase.SCORING_LOADING (1) for uc 3
+time: 7.748s
+SUCCESS
+running Phase.SCORING_LOADING (1) for uc 7
+time: 1.756s
+SUCCESS
+initializing Phase.SCORING (1) for uc 3
+time: 1.426s
+SUCCESS
+initializing Phase.SCORING (1) for uc 3
+time: 37.491s
+SUCCESS
+initializing Phase.SCORING (1) for uc 7
+time: 2.274s
+SUCCESS
+initializing Phase.SCORING (1) for uc 7
+time: 34.841s
+SUCCESS
+preparing Phase.SCORING (1) for uc 3
+time: 2.326s
+SUCCESS
+preparing Phase.SCORING (1) for uc 7
+time: 1.927s
+SUCCESS
+running Phase.SCORING (1) for uc 3
+Metric (mean_squared_log_error): 4.6212929057448955
+running Phase.VERIFICATION for uc 3
+checking threshold: 4.6212929057448955 <= 5.4 OK
+time: 0.102s
+running Phase.SCORING (1) for uc 7
+Metric (median_absolute_error): 1.5702553
+running Phase.VERIFICATION for uc 7
+checking threshold: 1.5702553 <= 1.8 OK
+time: 0.02s
+stream serving_throughput_stream_1 preparing Phase.SERVING_THROUGHPUT for uc 3
+in 2.103
+stream serving_throughput_stream_2 preparing Phase.SERVING_THROUGHPUT for uc 3
+in 2.103
+stream serving_throughput_stream_2 preparing Phase.SERVING_THROUGHPUT for uc 7
+in 2.672
+stream serving_throughput_stream_1 preparing Phase.SERVING_THROUGHPUT for uc 7
+in 2.677
+stream serving_throughput_stream_2 running Phase.SERVING_THROUGHPUT for uc 3
+in 50.084
+stream serving_throughput_stream_1 running Phase.SERVING_THROUGHPUT for uc 3
+in 77.179
+stream serving_throughput_stream_2 running Phase.SERVING_THROUGHPUT for uc 7
+in 53.507
+stream serving_throughput_stream_1 running Phase.SERVING_THROUGHPUT for uc 7
+in 48.911
+========== RESULTS ==========
+phase_name  Phase.SERVING_1  ...  qualitity_metric_value
+use_case                     ...                        
+3                    38.793  ...                4.621293
+7                    30.437  ...                1.570255
+
+[2 rows x 4 columns]
+SERVING THROUGHPUT
+                        stream   metric
+0  serving_throughput_stream_1  126.090
+1  serving_throughput_stream_2  103.591
+DATAGEN: 56.858
+TLOAD: 36.581
+TLD: 36.581
+TTT: 6.305
+Unable to compute AIUCpm@3.0. One or more required phases or values couldn't be executed or computed for this benchmark run.

@@ -1,0 +1,12 @@
+Deleted output/data/training/store_dept.csv
+Deleted output/data/serving/store_dept.csv
+Deleted output/data/training/order.csv
+Deleted output/data/serving/order.csv
+Deleted output/data/training/lineitem.csv
+Deleted output/data/serving/lineitem.csv
+Deleted output/data/training/product.csv
+Deleted output/data/serving/product.csv
+Deleted output/model/uc03
+Deleted output/data/training/ProductRating.csv
+Deleted output/data/serving/ProductRating.csv
+Deleted output/model/uc07

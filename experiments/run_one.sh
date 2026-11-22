@@ -26,8 +26,11 @@ echo "[run] $EXP/$RUN  (SF=$SF, cores=$CORES, streams=$STREAMS, rep=$REP)  $(dat
 hdfs dfs -ls -C /spark-logs 2>/dev/null | sort > "$OUT/.eventlogs_before"
 
 cd "$KIT_DIR" || exit 1
+# the kit's tpcxai.sh never passes --streams to the driver (default 2); scripts/patch_kit.sh
+# makes it pass ${TPCXAI_STREAMS:-2}. The driver accepts 2 or more streams.
+export TPCXAI_STREAMS="$STREAMS"
+grep -q 'TPCXAI_STREAMS' bin/tpcxai.sh || { echo "run scripts/patch_kit.sh first" >&2; exit 1; }
 set +u; source ./setenv.sh; set -u
-export TPCxAI_SERVING_THROUGHPUT_STREAMS="$STREAMS"
 
 touch "$OUT/.start"
 date +%s > "$OUT/start_epoch"

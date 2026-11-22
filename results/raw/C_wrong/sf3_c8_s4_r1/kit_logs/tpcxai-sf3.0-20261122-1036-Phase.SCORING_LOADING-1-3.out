@@ -1,0 +1,5 @@
+Creating output/data/scoring...
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/scoring/order.csv to output/data/scoring
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/scoring/lineitem.csv to output/data/scoring
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/scoring/product.csv to output/data/scoring
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/scoring/store_dept.csv to output/data/scoring

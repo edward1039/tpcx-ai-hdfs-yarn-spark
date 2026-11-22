@@ -1,0 +1,12 @@
+Creating output/data/training...
+Creating output/data/serving...
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/training/product.csv to output/data/training
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/training/lineitem.csv to output/data/training
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/training/order.csv to output/data/training
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/training/store_dept.csv to output/data/training
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/serving/store_dept.csv to output/data/serving
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/serving/order.csv to output/data/serving
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/serving/product.csv to output/data/serving
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/serving/lineitem.csv to output/data/serving
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/training/ProductRating.csv to output/data/training
+Loading file /home/oop/spark-kit/tpcx-ai-v2.0.0/output/raw_data/serving/ProductRating.csv to output/data/serving

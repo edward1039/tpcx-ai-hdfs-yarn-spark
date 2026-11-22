@@ -24,7 +24,7 @@ config/
   spark/             spark-defaults.conf (event logs for the Spark History Server)
   tpcx-ai/           make_config.sh: derives the driver configuration from the kit's default-spark.yaml
   wslconfig.example  WSL2 memory settings (10 GB + 8 GB swap)
-scripts/             install_configs.sh, start_cluster.sh, stop_cluster.sh
+scripts/             install_configs.sh, patch_kit.sh, start_cluster.sh, stop_cluster.sh
 experiments/         run_one.sh (one monitored run), run_scalability.sh (experiments A, B, C)
 analysis/            parse_results.py, spark_stages.py, plot.py
 results/             summary tables and figures (raw/ holds per-run outputs)
@@ -68,7 +68,7 @@ source ~/.bashrc
 
 ### 3. Configure and start the cluster
 ```sh
-git clone https://github.com/<your-id>/tpcx-ai-hdfs-yarn-spark.git && cd tpcx-ai-hdfs-yarn-spark
+git clone https://github.com/edward1039/tpcx-ai-hdfs-yarn-spark.git && cd tpcx-ai-hdfs-yarn-spark
 bash scripts/install_configs.sh
 hdfs namenode -format                            # first install only
 bash scripts/start_cluster.sh
@@ -80,6 +80,8 @@ Web UIs: HDFS `http://localhost:9870`, YARN `http://localhost:8088`, Spark Histo
 spark-submit --master yarn --deploy-mode client --class org.apache.spark.examples.SparkPi \
   $SPARK_HOME/examples/jars/spark-examples_2.12-3.0.3.jar 10 2>&1 | grep "Pi is"
 ```
+The kit's `bin/tpcxai.sh` never passes `--streams` to the driver, so the serving-throughput test always runs 2 streams; patch it once with `bash scripts/patch_kit.sh` (keeps `bin/tpcxai.sh.orig`). The driver accepts 2 or more streams.
+
 The first TPCx-AI run asks you to accept the PDGF license (type `YES`). Run one SF1 run by hand once (`bash experiments/run_one.sh test 1 8 2 1`) before starting the batch.
 
 ## Scalability Experiments
@@ -88,7 +90,7 @@ The first TPCx-AI run asks you to accept the PDGF license (type `YES`). Run one 
 |---|---|---|---|
 | **A – data scalability** | scale factor 1, 3, 5, 10 | 1 executor × 8 cores × 3 GB, 2 streams | How do phase times grow with the input size, and where does the host saturate? |
 | **B – resource scalability** | executor cores 1, 2, 4, 8 | SF 3, 2 streams | How much faster does training get with more cores (speedup, efficiency)? |
-| **C – concurrency** | serving-throughput streams 1, 2, 4 | SF 3, 8 cores | How does YARN container sizing affect concurrent serving? |
+| **C – concurrency** | serving-throughput streams 2, 4, 8 | SF 3, 8 cores | How does YARN container sizing affect concurrent serving? |
 
 ```sh
 bash experiments/run_scalability.sh all          # or A, B, C; REPS=3 by default, REPS_LARGE=2 for SF 10
@@ -122,6 +124,7 @@ $PY analysis/plot.py               # results/aggregate.csv, scaling_fit.csv, spe
 | PDGF fails with `ClassCastException` | Use Java 8 (`sudo update-alternatives --config java`). |
 | `CondaToSNonInteractiveError` during `setup-spark3.sh` | `conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main` (and `.../pkgs/r`). |
 | YARN: `requested resource is greater than maximum allowed allocation` | `yarn.scheduler.maximum-allocation-vcores` must be at least the executor cores (set to 10 here). |
+| Serving throughput always shows 2 streams | Run `scripts/patch_kit.sh` (the kit does not forward `--streams`). |
 | Runs are killed or the host freezes | Increase WSL memory (`.wslconfig`) or lower the scale factor. |
 
 ## License

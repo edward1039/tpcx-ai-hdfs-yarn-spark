@@ -11,7 +11,8 @@ running NodeManager     || setsid yarn --daemon start nodemanager
 sleep 5
 
 # HDFS home directory for the kit's relative paths, and the Spark event-log directory
-timeout 120 hdfs dfsadmin -safemode wait >/dev/null   # NameNode refuses writes until it leaves safe mode
+timeout 120 hdfs dfsadmin -safemode wait >/dev/null \
+  || echo "WARNING: NameNode still in safe mode (see README Troubleshooting)"
 hdfs dfs -mkdir -p "/user/$USER" /spark-logs
 
 running HistoryServer || setsid "$SPARK_HOME/sbin/start-history-server.sh" >/dev/null

@@ -1,0 +1,3 @@
+use_case,Phase.SERVING_1,Phase.TRAINING_1,qualitity_metric_name,qualitity_metric_value
+3,28.567,149.0,mean_squared_log_error,4.7273330522229635
+7,35.218,50.587,median_absolute_error,1.5702553

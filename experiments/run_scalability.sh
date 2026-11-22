@@ -29,7 +29,7 @@ if [[ "$WHICH" == B || "$WHICH" == all ]]; then
 fi
 
 if [[ "$WHICH" == C || "$WHICH" == all ]]; then
-  for S in 1 2 4; do
+  for S in 2 4 8; do
     for r in $(seq 1 2); do run C 3 8 "$S" "$r"; done
   done
 fi

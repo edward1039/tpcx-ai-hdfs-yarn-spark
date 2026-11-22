@@ -151,6 +151,14 @@ def parse_run(exp, run_dir):
         rec["wall_clock_s"] = rec["end_epoch"] - rec["start_epoch"]
     for fn in (parse_metrics, parse_aiucpm, parse_streams, parse_rows, parse_vmstat):
         rec.update(fn(run_dir))
+    # Runs kept in e.g. C_wrong/ were launched before scripts/patch_kit.sh, so the kit ran its
+    # default of 2 streams whatever the directory name says: file them under the base
+    # experiment with the stream count the driver actually reported.
+    rec["source_dir"] = exp
+    rec["experiment"] = exp.split("_")[0]
+    rec["streams_requested"] = rec["streams"]
+    if rec.get("n_streams_reported"):
+        rec["streams"] = rec["n_streams_reported"]
     return rec
 
 
