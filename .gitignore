@@ -9,3 +9,6 @@ results/raw/**/eventlogs/
 __pycache__/
 *.pyc
 .DS_Store
+
+# kit SQLite run log (cumulative, redundant with the metric CSVs)
+results/raw/**/kit_logs/*.db
