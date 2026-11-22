@@ -12,3 +12,4 @@ __pycache__/
 
 # kit SQLite run log (cumulative, redundant with the metric CSVs)
 results/raw/**/kit_logs/*.db
+hs_err_pid*.log
